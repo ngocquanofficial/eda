@@ -1,0 +1,708 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title> CAR INSURANCE 2024 (1)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="3fffe512-d0b3-4294-9b6f-636bc7ac65d9" class="page sans"><header><h1 class="page-title"> CAR INSURANCE 2024 (1)</h1><p class="page-description"></p></header><div class="page-body"><nav id="77009ce3-439b-4a94-a0d1-e02a87acc01b" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#c31753d5-d922-4153-8cd0-cfca016d6ec0">OUTLINE</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#def97858-432e-45ff-979d-7c24172d2dc6">GIẢ THUYẾT</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#21079844-876a-473b-8b20-4947624d9b47">2. EDA PHÂN TÍCH DỮ LIỆU</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#e38124ef-725d-47f0-af00-90793b7908fa">2.1 THÔNG TIN VỀ DATA</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#bc76e75e-bdd6-46fe-b3ff-223aefbaeb27">Kích thước data: </a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#d9261300-f35a-454c-bc9e-6fe48ee23816">Kiểu giá trị các biến: </a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#d47671ea-b055-4092-8253-732205e4950c">Missing values: </a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#ad7ac9bc-b3b3-44fc-af38-fda53f848ccc">2.2 LÀM SẠCH DỮ LIỆU</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#72a366cd-8be7-445e-84cb-0df364032738">BỎ NHỮNG CỘT KHÔNG CẦN THIẾT</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#cca24eb5-7aa4-4d4f-abab-9a3bbb5a998e">XỬ LÍ MISSING VALUES</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#6f415866-2b70-4a12-b866-24e182697488">2.3 CÁC THUỘC TÍNH CỦA DỮ LIỆU</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#dcd70697-b487-46fc-9a1b-a5912a5e6bf2">CORRELATION MATRIX</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#c5ab9112-71a1-49ff-94fe-d1cd0b973b47">KIỂM TRA OUTLIER</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#ed190e26-3879-41a9-b107-e793d82f2df2">IMBALANCE DATASET</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#13793d57-a6fe-4dd0-9628-6d888ef74ad4">2.4 HAI NHÓM KHÁCH HÀNG CÓ NHỮNG ĐẶC ĐIỂM CƠ BẢN KHÁC NHAU NHƯ THẾ NÀO</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#330e2362-5e15-4900-9ded-15d3fe7b5227">ĐẶC ĐIỂM VỀ TUỔI TÁC (BIỂU ĐỒ CỘT STACKED NGANG)</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#e95695e5-56b1-4847-bb32-7e397100b0e7">TRÌNH ĐỘ HỌC VẤN </a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#8f85d6b1-119b-4e55-8f97-f465b4fc2559">TỈ LỆ GIỚI TÍNH</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#fdf417d5-cc28-45a6-b2f9-13f21b48b448">GIA ĐÌNH CỦA KHÁCH HÀNG</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#fd2da8b9-17d6-4ba2-8293-7ea2bf04b2fd">2.5 ĐẶC ĐIỂM VỀ TÌNH TRẠNG TÀI CHÍNH CỦA HAI NHÓM KHÁCH HÀNG</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#54b19da3-c75e-4a3d-a2da-fe06228ab68a"><strong>TỈ LỆ KHÁCH HÀNG YÊU CẦU BỒI THƯỜNG Ở CÁC NHÓM THU NHẬP KHÁC NHAU(BIỂU ĐỒ TRÒN) (seaborn)</strong></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#74624fbb-c50a-4731-9914-9f71903c371f"><strong>ĐIỂM CREDIT GIỮA HAI NHÓM KHÁCH HÀNG YÊU CẦU BỒI THƯỜNG &amp; KHÔNG YÊU CẦU </strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2897b18c-9847-44b9-bd93-26f53f89a700">2.6 ĐẶC ĐIỂM LIÊN QUAN ĐẾN Ô TÔ &amp; NGƯỜI LÁI XE</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#a9a39283-9ba6-4675-b5bf-8f78aaeb41e3">CÓ LOẠI XE CỤ THỂ NÀO CÓ TỈ LỆ YÊU CẦU BỒI THƯỜNG BẢO HIỂM CAO HƠN?</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#8e56af74-d562-4350-85ed-a6f2936da7a1">XE CÀNG CŨ, CÀNG DỄ BỊ YÊU CẦU BỒI THƯỜNG BẢO HIỂM ?</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#ac417b0e-d209-4397-b8ee-4e997d87338f">KINH NGHIỆM LÁI XE CÀNG CAO, TỈ LỆ YÊU CẦU BỒI THƯỜNG CÓ CÀNG THẤP? </a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#60ae4d12-9dff-4653-9714-8266a9497938">LÁI XE CÀNG NHIỀU, CÀNG DỄ YÊU CẦU BỒI THƯỜNG BẢO HIỂM?</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#6b374185-7b40-440a-ac07-965777d543dd">LỊCH SỬ VI PHẠM GIAO THÔNG(DUIS: driving under the influence, SPEEDING_VIOLATIONS, PAST_ACCIDENTS) CÓ ẢNH HƯỞNG ĐẾN TỈ LỆ YÊU CẦU BẢO HIỂM ?</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#26acd394-9cfa-41cf-95fc-4c8e7181b697">MODEL</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#3838a597-b4d8-4404-ab60-9ced15316c67">TIỀN XỬ LÍ DATA</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#e07e3070-caa8-4250-9d4c-4417bea18da8">CHIA TẬP HUẤN LUYỆN/KIỂM TRỬ</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#cf3d96dc-1acd-4cf9-8181-bc03fda1c8ba">CONFUSION MATRIX</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#0d195219-757a-4e11-be41-f0dcd262a4df">CONFUSION MATRIX OF LinearRegression</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#d0d51fd6-d494-4cb8-ada8-36d0553bd549">CONFUSION MATRIX OF Random Forest</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#f548e0c5-0d2d-4cc2-92da-716b5046e737">CONFUSION MATRIX OF Gradient Boosting</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#18f1ef94-ae6c-470b-ba70-718f0e4dd5b3">CONFUSION MATRIX OF XGBoosting</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#878cf064-8235-4301-aac2-50f3e079c831">ROC CURVE</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#3a183531-2240-4732-b7c1-290dfcc29e44">FEATURE IMPORTANCE</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#75a758e4-921a-4780-8347-cd2254d8c277">CONCUSION</a></div></nav><h1 id="c31753d5-d922-4153-8cd0-cfca016d6ec0" class="">OUTLINE</h1><ol type="1" id="a6941d2f-f447-4fa2-88d8-acdf09f01534" class="numbered-list" start="1"><li>Giả thuyết…</li></ol><ol type="1" id="8857e9e8-ea29-464d-829b-80026184b3a9" class="numbered-list" start="2"><li>Thống kê chung</li></ol><p id="28119926-d403-4d45-8340-d823f4508822" class="">2.1 Thông tin cơ bản về data bao gồm</p><ul id="77147589-ef8f-4992-bb8c-042401eb5d57" class="bulleted-list"><li style="list-style-type:disc">Kích thước </li></ul><ul id="e421f67b-0387-4c35-a38a-f30e25bb6364" class="bulleted-list"><li style="list-style-type:disc">Kiểu giá trị</li></ul><ul id="38894a43-8a74-497f-8d7b-0d6ffda2c0bb" class="bulleted-list"><li style="list-style-type:disc">Missing values</li></ul><p id="b3c2e141-4b37-4322-b26c-27665076c382" class="">2.2 Làm sạch dữ liệu</p><ul id="89358703-3e02-4e85-a5e3-0658a807bef0" class="bulleted-list"><li style="list-style-type:disc"></li></ul><p id="663cc645-1a40-47bf-9110-fc73d20b2029" class="">
+</p><h1 id="def97858-432e-45ff-979d-7c24172d2dc6" class="">GIẢ THUYẾT</h1><ul id="d626542e-2a30-4393-8cf9-d14883f90847" class="bulleted-list"><li style="list-style-type:disc"><strong> độ tuổi càng trẻ thì tỉ lệ khách hàng yêu cầu bồi thường bảo hiểm (OUTCOME= 1) càng lớn ?</strong></li></ul><ul id="e1ec8901-bc23-4caa-a048-c22dba663789" class="bulleted-list"><li style="list-style-type:disc">Học vấn cao hơn có dẫn đến tỉ lệ yêu cầu bồi thường bảo hiểm thấp hơn ?</li></ul><ul id="382c7a05-971d-47be-aed3-61ca0fbb139d" class="bulleted-list"><li style="list-style-type:disc">Tỉ lệ nam-nữ có chênh lệch đối với hai nhóm khách hàng không ?</li></ul><ul id="27d41352-d7c5-4a05-af87-dbb48a3b90d6" class="bulleted-list"><li style="list-style-type:disc">Những khách hàng độc thân sẽ tham gia yêu cầu bồi thường bảo hiểm nhiều hơn hẳn so với khách hàng đã có gia đình hay ko ?</li></ul><ul id="eafa51e6-3b18-4216-9cda-a859209e29c7" class="bulleted-list"><li style="list-style-type:disc">Xu hướng này giúp ta khẳng định được rằng thu nhập của khách hàng càng cao thì họ càng ít có nhu cầu tham gia vào các cuộc yêu cầu bồi thường bảo hiểm hay ko ?</li></ul><ul id="9af3a972-6d7a-466d-b112-67defe7b8891" class="bulleted-list"><li style="list-style-type:disc">Điểm credit score của nhóm khách hàng yêu cầu bồi thường bảo hiểm sẽ thấp hơn nhóm còn lại ko ?</li></ul><ul id="3184ec04-c3a5-4aef-9631-8a9cecdc9fac" class="bulleted-list"><li style="list-style-type:disc">Có loại xe nào khiến khách hàng yêu cầu bồi thường nhiều hơn ko?</li></ul><ul id="24450f81-afb4-4c12-8d93-f42f9e06263f" class="bulleted-list"><li style="list-style-type:disc">Xe càng cũ, càng dễ yêu cầu bồi thường bảo hiểm?</li></ul><ul id="aca16288-f7ca-42de-b513-57d88d2c6cbc" class="bulleted-list"><li style="list-style-type:disc">Kinh nghiệm lái xe càng cao, tỉ lệ yêu cầu bồi thường càng thấp</li></ul><ul id="b273328b-361a-483d-a2e9-f8e7e6f509ae" class="bulleted-list"><li style="list-style-type:disc">LÁI XE CÀNG NHIỀU, CÀNG DỄ YÊU CẦU BỒI THƯỜNG BẢO HIỂM? </li></ul><p id="43f46a7d-416c-4edd-9f11-8d06fdbcf4d1" class="">
+</p><h1 id="21079844-876a-473b-8b20-4947624d9b47" class="">2. EDA PHÂN TÍCH DỮ LIỆU</h1><h2 id="e38124ef-725d-47f0-af00-90793b7908fa" class="">2.1 THÔNG TIN VỀ DATA</h2><p id="4ee609c1-4752-4bbb-87cc-ba4879018f5d" class="">
+</p><h3 id="bc76e75e-bdd6-46fe-b3ff-223aefbaeb27" class="">Kích thước data: </h3><p id="04fec6c5-7323-4f12-b449-bd4baadb8562" class="">Có tất cả 2672 samples trong tập dataset và không có giá trị trùng lặp, mỗi sample tương ứng với thông tin của một khách hàng, bao gồm 18 chỉ số trong đó chỉ số mục tiêu của bài toán là chỉ số OUTCOME. </p><h3 id="d9261300-f35a-454c-bc9e-6fe48ee23816" class="">Kiểu giá trị các biến: </h3><p id="a3f252b8-90f5-4f4d-a4a2-1b77c21dc748" class="">Dataset có tất cả 18 chỉ số, bao gồm 10 cột chỉ số là kiểu giá trị phân loại còn lại 8 cột giá trị là kiểu giá trị số thực.</p><h3 id="d47671ea-b055-4092-8253-732205e4950c" class="">Missing values: </h3><p id="bb471278-8e6c-42ce-87e2-2a53ef9375d7" class="">Tất cả 18 chỉ số đều có đầy đủ giá trị với 2672 samples, dataset không chứa missing values.</p><p id="04ba9209-d1a0-47ca-8867-3a52d53f6053" class="">
+</p><h2 id="ad7ac9bc-b3b3-44fc-af38-fda53f848ccc" class="">2.2 LÀM SẠCH DỮ LIỆU</h2><h3 id="72a366cd-8be7-445e-84cb-0df364032738" class="">BỎ NHỮNG CỘT KHÔNG CẦN THIẾT</h3><p id="6c65d9ac-71de-4bf6-831f-1797cbace949" class="">Trong số các chỉ số thì cột chỉ số ID chỉ mang tính chất phân biệt giữa các samples, tất cả các samples đều nhận giá trị ID khác nhau. Do đó, ta sẽ bỏ cột dữ liệu này đi để tránh nhiễu cho model khi thực hiện chạy model</p><p id="04b251a6-b113-4edf-aca8-ba8be2f6117b" class="">
+</p><h3 id="cca24eb5-7aa4-4d4f-abab-9a3bbb5a998e" class="">XỬ LÍ MISSING VALUES</h3><p id="6fd8e02b-04b7-4a20-a2aa-75bfcee7815e" class="">Dataset của chúng ta không chứa missing value nên không cần thực hiện thêm các bước xử lí làm sạch dữ liệu. </p><h2 id="6f415866-2b70-4a12-b866-24e182697488" class="">2.3 CÁC THUỘC TÍNH CỦA DỮ LIỆU</h2><h3 id="dcd70697-b487-46fc-9a1b-a5912a5e6bf2" class="">CORRELATION MATRIX</h3><figure id="fe0e17d5-df7a-4338-b4c9-fb4ebd983bab" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/corr_matrix_custom_light_middle.png"><img style="width:576px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/corr_matrix_custom_light_middle.png"/></a></figure><p id="110b2f92-f37f-49d6-a987-af51a7d4b258" class=""><strong>Để thống kê về quan hệ của từng cặp hai cột chỉ số bất kì trong dataset tác động lên nhau, ta sẽ sử dụng biểu đồ Correlation Matrix. Mỗi ô trong ma trận tương ứng với hai cột giá trị sẽ thể hiện giá trị correlation của hai cột chỉ số đó. Các cặp chỉ số có giá trị correlation tương đối lớn về giá trị tuyệt đối(&gt;0.4 biểu thị quan hệ cùng chiều, &lt;0.4 biểu thị quan hệ ngược chiều) là các cột đáng để chúng ta quan tâm đến hơn, và sẽ được biểu diễn bằng một màu đậm hơn để dễ quan sát trong biểu đồ (màu canh với correlation lớn và thay đổi cùng chiều nhau, màu đỏ cho chiều ngược lại). </strong></p><p id="9e09e950-52e5-4541-a3f3-1bf55718355e" class="">Đầu tiên, ta thấy rõ được rằng không có bất kì chỉ số nào có hệ số correlation tương đối cao đối với chỉ số mục tiêu OUTCOME. Điều này cho thấy độ phức tạp của dataset, khi mà không có một cột dữ liệu đơn lẻ nào có tác động thực sự đến cột dữ liệu mục tiêu OUTCOME, mà các chỉ số kết hợp lại mới tạo ra được ảnh hưởng đối với cột dữ liệu Response.</p><p id="2ae5f8cf-cc42-4d52-a77f-4a2b2084175b" class=""><strong>Có thể thấy rõ được một số cặp chỉ số có quan hệ với nhau chặt chẽ như annual_mileage đối với married hay như annual_mileage đối với children đều có giá trị dương lớn, cho thấy các cặp giá trị quan hệ ngược chiều nhau, tức là những khách hàng đã có con/đã có gia đình thì sẽ có chỉ số annual_mileage thấp hơn hẳn, hay như quan hệ cùng chiều nhau giữa speed violations với past accidents với chỉ số correlation là 0.42, tức là một khách hàng vi phạm tốc độ càng nhiều thì càng có nhiều tai nạn trong quá khứ, và ngược lại.</strong></p><h3 id="c5ab9112-71a1-49ff-94fe-d1cd0b973b47" class="">KIỂM TRA OUTLIER</h3><p id="74fb1de7-3cf5-4c76-83cc-fc88a9ca7a32" class="">
+</p><figure id="0879ff41-b928-4579-92aa-b12dbb5612b9" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/outliers.png"><img style="width:707.98828125px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/outliers.png"/></a></figure><p id="bc434b1b-7684-4747-b70d-2dd8adf3cea8" class=""><strong>Viết thêm lí do không bỏ outlier</strong></p><p id="8ba96e69-be60-4ca0-8f83-cd490e399ca0" class="">Để kiểm tra về outlier có trong dataset, chúng ta sẽ sử dụng biểu đồ box plot để kiểm tra về sự phân bố của outlier đối với từng chỉ số có trong dataset. Đầu tiên, chúng tôi lọc ra những cột giá trị kiểu số và có từ hai giá trị khác nhau trở lên để bỏ qua những cột giá trị kiểu phân loại không phù hợp với mục đích kiểu tra sự tồn tại outliers của biểu đồ box plot. Từ các biểu đồ ta có thể thấy một số chỉ số phân bố khá đều và có rất ít giá trị outlier như cột giá trị ID, Postal Code, một số chỉ số có tồn tại các giá trị outlier nhưng với số lượng không đáng kể như Annual_Mileage, Credit Score. Cuối cùng, có hai cột chỉ số là speeding violations và past accidents chứa một lượng đáng kể outliers, thậm chí các giá trị outliers này còn phân bố rất xa so với những giá trị khác,<strong> cho thấy đây là thông tin của những khách hàng đặc biệt, khác biệt so với phần còn lại, yêu cầu chúng ta cần có những lưu ý để phân tích cho nhóm đối tượng này ở các phần sau.</strong></p><h3 id="ed190e26-3879-41a9-b107-e793d82f2df2" class="">IMBALANCE DATASET</h3><figure id="32b5534e-9e7f-4bc2-897f-b9384f8b3c00" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled.png"><img style="width:384px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled.png"/></a></figure><p id="db88959b-6c94-497d-9a1b-42a0c9b9800a" class="">Trong tổng số 2672 khách hàng được thống kê ở trong dataset, có tới gần 70% khách hàng thuộc nhóm có OUTCOME=0 tức là họ không có nhu cầu yêu cầu bồi thường bảo hiểm, gấp hơn hai lần so với nhóm khách hàng còn lại. Điều này cho thấy dataset này không cân bằng, khi mà số lượng khách hàng không yêu cầu bồi thường bảo hiểm chiếm số lượng đa số. Do đó, chúng ta sẽ cần lưu ý trong các giả thuyết, đánh giá để đảm bảo mức độ quan trọng của cả hai nhóm khách hàng là như nhau, không để nhóm OUTCOME= 0 lấn át nhóm còn lại. Ngoài ra, chúng ta cũng cần lưu ý đến cách đánh giá hiệu quả của model ở phần sau để tránh những đánh giá sai lầm, ta sẽ phải dùng đến cả các metric precision, recall, f1 score thay vì chỉ cần dùng accurancy(tỉ lệ chính xác) như thông thường đối với các bài toán có dataset cân bằng.</p><h2 id="13793d57-a6fe-4dd0-9628-6d888ef74ad4" class="">2.4 HAI NHÓM KHÁCH HÀNG CÓ NHỮNG ĐẶC ĐIỂM CƠ BẢN KHÁC NHAU NHƯ THẾ NÀO</h2><p id="5461e960-83ea-48f9-b324-292ad977b7c8" class="">
+</p><h3 id="330e2362-5e15-4900-9ded-15d3fe7b5227" class="">ĐẶC ĐIỂM VỀ TUỔI TÁC (BIỂU ĐỒ CỘT STACKED NGANG)</h3><figure id="6e54026f-2850-4950-a47f-93b6100653b4" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%201.png"><img style="width:429.3333435058594px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%201.png"/></a></figure><p id="9b15a242-97d6-4337-87b0-978fcfba9a6e" class="">Ta sử dụng biểu đồ thể hiện tỉ lệ phần trăm số lượng khách hàng của từng nhóm ứng với từng nhóm tuổi khác nhau. <strong>Từ biểu đồ ta có thể thấy rõ được một xu hướng đó là độ tuổi càng trẻ thì tỉ lệ khách hàng yêu cầu bồi thường bảo hiểm (OUTCOME= 1) càng lớn.</strong> Tỉ lệ này lên tới hơn 70% đối với nhóm khách hàng từ 16-25 tuổi, giảm mạnh còn hơn 32% với nhóm khách hàng 26-39 tuổi, và chỉ còn hơn 10% đối với hai nhóm khách hàng lớn tuổi nhất 40-64 và 64+. Sự chênh lệch đáng kể về tỉ lệ này cho thấy công ty cần phải nghiên cứu kĩ từng nhóm khách hàng theo độ tuổi, đặc biệt là với nhóm khách hàng trẻ để tìm hiểu nguyên nhân dẫn đến tỉ lệ yêu cầu bảo hiểm rất cao như vậy.</p><h3 id="e95695e5-56b1-4847-bb32-7e397100b0e7" class="">TRÌNH ĐỘ HỌC VẤN </h3><figure id="b446687d-081b-446b-ad9e-4cfe48c07935" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%202.png"><img style="width:707.94921875px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%202.png"/></a></figure><p id="2754e77e-2f7b-4ddc-9c02-5e7e7a0b513c" class="">Chúng ta sử dụng biểu đồ Donut Chart để thể hiện tỉ lệ về 3 loại học vấn khác nhau high school, university và none của các khách hàng có trong dataset. <strong>Có thể thấy trình độ học vấn của nhóm khách hàng có OUTCOME= 0 có xu hướng cao hơn một chút</strong>, khi mà tỉ lệ số khách hàng học đại học là khoảng 45% so với 29% của nhóm OUTCOME= 1, và tỉ lệ khách hàng có trình độ học vấn None cũng thấp hơn so với nhóm khách hàng còn lại. Tuy nhiên, sự chênh lệch này là không quá rõ ràng, cần thêm những thống kê chi tiết để tìm hiểu rõ nguyên nhân và công ty có thể sẽ cần cân nhắc để đưa ra bất kì quyết định nào liên quan đến trình độ học vấn của khách hàng.</p><h3 id="8f85d6b1-119b-4e55-8f97-f465b4fc2559" class="">TỈ LỆ GIỚI TÍNH</h3><figure id="b9abffa2-dbdb-4e60-857d-6d3b9c9dc61c" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%203.png"><img style="width:707.96875px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%203.png"/></a></figure><p id="b646816a-cca0-4443-b8ba-373449c5aaf8" class="">Chúng ta  sử dụng hai cột tương ứng với hai nhóm khách hàng OUTCOME= 0 và OUTCOME=1, mỗi cột thể hiện tỉ lệ nam-nữ trong số các khách hàng thuộc nhóm đó. Có thể thấy trong nhóm khách hàng không yêu cầu bồi thường bảo hiểm (OUTCOME= 0) thì tỉ lệ nữ giới nhỉnh hơn so với nam giới, trong khi tỉ lệ này đối với nhóm khách hàng có yêu cầu bồi thường chỉ là khoảng hơn 40%. <strong>Sự chênh lệch này có thể dẫn đến nhận xét như nữ giới có xu hướng ít yêu cầu bồi thường hơn so với nam giới, tuy nhiên cũng giống như đối với sự khách biệt về tỉ lệ học vấn ở trên, sự chênh lệch này là không quá rõ ràng</strong>, do đó để có thể đưa ra được kết luận chi tiết về yếu tố này sẽ cần kết hợp thêm cả những phân tích khác liên quan.</p><h3 id="fdf417d5-cc28-45a6-b2f9-13f21b48b448" class="">GIA ĐÌNH CỦA KHÁCH HÀNG</h3><figure id="eefa7df2-cbae-43cf-923d-06582a0da38e" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%204.png"><img style="width:480px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%204.png"/></a></figure><p id="e22d4698-561d-439d-a20b-dc9b3cdc3db2" class="">Chúng tôi sử dụng biểu đồ cột gồm hai cột tương ứng với hai nhóm khách hàng OUTCOME= 0 và OUTCOME= 1. Có thể thấy rõ được xu hướng rằng nhóm khách hàng ko yêu cầu bồi thường bảo hiểm có tỉ lệ đã kết hôn so với chưa kết hôn cao hơn hẳn nhóm khách hàng còn lại. Trong khi số lượng khách hàng đã kết hôn gấp khoảng hơn 1.5 lần khách chưa kết hôn trong nhóm OUTCOME=0, thì tỉ lệ này ở nhóm khách hàng OUTCOME=1 chỉ là gần 0.5 lần. <strong>Từ đây ta có nhận xét rằng những khách hàng độc thân sẽ có khả năng yêu cầu bồi thường bảo hiểm cao hơn hẳn so với khách hàng đã có gia đình.  </strong></p><p id="cb9aeb58-7e23-4b7e-9ebe-4134491dbe90" class="">
+</p><h2 id="fd2da8b9-17d6-4ba2-8293-7ea2bf04b2fd" class="">2.5 ĐẶC ĐIỂM VỀ TÌNH TRẠNG TÀI CHÍNH CỦA HAI NHÓM KHÁCH HÀNG</h2><p id="9b285e82-457a-47e1-86eb-5599db1d8175" class="">
+</p><h3 id="54b19da3-c75e-4a3d-a2da-fe06228ab68a" class=""><strong>TỈ LỆ KHÁCH HÀNG YÊU CẦU BỒI THƯỜNG Ở CÁC NHÓM THU NHẬP KHÁC NHAU(BIỂU ĐỒ TRÒN) (seaborn)</strong></h3><figure id="4fef55a8-d8ea-4c37-a0ab-e321f964c9b9" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/income.png"><img style="width:708px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/income.png"/></a></figure><p id="5e30c5e4-1023-4c37-b13a-cf9096e12ab7" class="">Mỗi biểu đồ tròn ứng với một nhóm thu nhập của khách hàng và thể hiện tỉ lệ khách hàng yêu cầu-không yêu cầu bồi thường trong số những khách hàng thuộc nhóm thu nhập đó. Ta có thể thấy được sự chênh lệnh rõ rệt giữa các nhóm thu nhập, và tỉ lệ khách hàng yêu cầu bảo hiểm có xu hướng giảm dần theo mức thu nhập của khách hàng. Trong khi nhóm khách hàng thu nhập thấp (working class và poverty) có tỉ lệ yêu cầu bồi thường rất cao lên tới 36.3% và 48%, thì tỉ lệ này giảm xuống còn 26.4% đối với tầng lớp thu nhập trung bình (middle class) và chỉ còn khoảng hơn 12% đối với nhóm khách hàng thu nhập cao(upper class). Xu hướng này giúp ta khẳng định được rằng<strong> thu nhập của khách hàng càng cao thì họ càng ít có nhu cầu tham gia vào các cuộc yêu cầu bồi thường bảo hiểm như các nhóm khách hàng có thu nhập thấp hơn</strong></p><p id="64bb0398-5b45-4373-9f51-94e885ff3a05" class="">
+</p><h3 id="74624fbb-c50a-4731-9914-9f71903c371f" class=""><strong>ĐIỂM CREDIT GIỮA HAI NHÓM KHÁCH HÀNG YÊU CẦU BỒI THƯỜNG &amp; KHÔNG YÊU CẦU </strong></h3><figure id="77aa9b1a-aa5b-4ae2-8e86-eca3c92525e8" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%205.png"><img style="width:707.96875px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%205.png"/></a></figure><p id="5cf60649-d76c-4fd7-889f-645d51a005ba" class="">Chúng ta sử dụng hai biểu đồ đường để tương ứng biểu diễn phân bổ điểm credit score đối với hai nhóm khách hàng. Từ biểu đồ ta có thể thấy rõ được nhóm khách hàng không yêu cầu bảo hiểm có điểm credit cao hơn hẳn so với nhóm có yêu cầu bồi thường bảo hiểm. Nhóm khách hàng OUTCOME=0 này có mức credit score trung bình vào khoảng 0.6 cao hơn hẳn so với nhóm còn lại chỉ khoảng 0.4 điểm. Điều này cho ta thấy rõ rằng <strong>các khách hàng có credit score cao sẽ ít có khả năng tham gia yêu cầu bồi thường bảo hiểm hơn so với những KH có mức credit score thấp hơn.</strong></p><p id="25f903b9-ab36-436b-930a-31a5968f2cde" class="">
+</p><h2 id="2897b18c-9847-44b9-bd93-26f53f89a700" class="">2.6 ĐẶC ĐIỂM LIÊN QUAN ĐẾN Ô TÔ &amp; NGƯỜI LÁI XE</h2><h3 id="a9a39283-9ba6-4675-b5bf-8f78aaeb41e3" class="">CÓ LOẠI XE CỤ THỂ NÀO CÓ TỈ LỆ YÊU CẦU BỒI THƯỜNG BẢO HIỂM CAO HƠN?</h3><figure id="8591adf4-c354-4369-91ab-9825bf87cc6e" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%206.png"><img style="width:429.3333435058594px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%206.png"/></a></figure><p id="3abb7dc2-5f01-49ba-8559-5c55981a5557" class="">Các khách hàng trong dataset chỉ sử dụng hai loại xe là sedan và sports car, trong đó xe sedan chiếm đa số trong cả hai nhóm khách hàng. <strong>Có thể thấy tỉ lệ về loại xe trong cả hai nhóm khách hàng là như nhau không có sự khác biệt đáng kể nào, cho thấy rằng loại phương tiện không phải là một yếu tố ảnh hưởng lớn để tỉ lệ yêu cầu bồi thường bảo hiểm</strong></p><h3 id="8e56af74-d562-4350-85ed-a6f2936da7a1" class="">XE CÀNG CŨ, CÀNG DỄ BỊ YÊU CẦU BỒI THƯỜNG BẢO HIỂM ?</h3><figure id="6b06279a-85c0-4e80-9733-743f31c0bb03" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%207.png"><img style="width:480px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%207.png"/></a></figure><p id="23a7ee2e-4712-4797-b93b-36c0c3617866" class=""><strong>Có thể thấy rõ được là giả thuyết của chúng ta là chính xác, khách hàng sở hữu những chiếc xe cũ có tỉ lệ yêu cầu bồi thường cao hơn hẳn so với những người sở hữu xe mới.</strong> Ta thấy được rằng với các khách hàng sở hữu xe cũ(before 2015) thì số lượng người yêu cầu bảo hiểm bằng khoảng 2/3 so với những người không yêu cầu, trong khi đối với người sở hữu xe mới hơn (after 2015) thì tỉ lệ này chỉ còn khoảng 1/7. Trong các khách hàng sở hữu xe mới, chỉ có 100 người yêu cầu bồi thường trong khi có tới 748 người không yêu cầu.</p><h3 id="ac417b0e-d209-4397-b8ee-4e997d87338f" class="">KINH NGHIỆM LÁI XE CÀNG CAO, TỈ LỆ YÊU CẦU BỒI THƯỜNG CÓ CÀNG THẤP? </h3><figure id="4dc4284e-6ca9-41a7-91e0-663b2bf0556a" class="image"><a href="CAR%20INSURANCE%202024%20(1)%203fffe512d0b342949b6f636bc7ac65d9/Untitled.png"><img style="width:429.3333435058594px" src="CAR%20INSURANCE%202024%20(1)%203fffe512d0b342949b6f636bc7ac65d9/Untitled.png"/></a></figure><p id="9ecf1636-69b0-4219-b067-f4aa394d634c" class=""><strong>Có thể thấy rõ ràng rằng giả thuyết của chúng ta đặt ra là hoàn toàn chính xác</strong>. Nhóm khách hàng có ít kinh nghiệm lái xe nhất (0-9y) có tới hơn 60% đã yêu cầu bồi thường bảo hiểm, tỉ lệ này giảm còn 1/3 xuống khoảng 23% đối với nhóm khách hàng có 10-19 năm kinh nghiệm. Trong khi đó với những khách hàng có nhiều kinh nghiệm lái xe hơn(20-29y và 30y+) thì con số này là rất nhỏ, thậm chí là không đáng kể đối với nhóm 30y+. Sự chênh lệch rất đáng kể giữa các nhóm này cho thấy<strong> chỉ số về số năm kinh nghiệm lái xe là một trong những chỉ số quan trọng nhất ảnh hưởng đến chỉ số mục tiêu của bài toán này, đó là chỉ số OUTCOME xem khách hàng có yêu cầu bồi thường bảo hiểm hay không.</strong></p><h3 id="60ae4d12-9dff-4653-9714-8266a9497938" class="">LÁI XE CÀNG NHIỀU, CÀNG DỄ YÊU CẦU BỒI THƯỜNG BẢO HIỂM?</h3><figure id="3df86e99-005d-4e58-b56b-750d063b7ae0" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%209.png"><img style="width:707.94921875px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%209.png"/></a></figure><p id="5c46947f-2fe1-40a2-9a29-be71e31eb984" class="">Đúng như giả thuyết ta đã đặt ra, từ biểu đồ ta có thể thấy được nhóm khách hàng có OUTCOME= 1 có quãng đường lái xe nhiều hơn tương đối so với nhóm khách hàng OUTCOME= 0. Phân bố quãng đường đã đi của cả hai nhóm khách hàng đều theo hình dạng phân phối chuẩn, với giá trị trung bình vào khoảng 11000 đối với nhóm khách hàng không yêu cầu bồi thương và khoảng 13000 với nhóm khách hàng còn lại.</p><h3 id="6b374185-7b40-440a-ac07-965777d543dd" class="">LỊCH SỬ VI PHẠM GIAO THÔNG(DUIS: driving under the influence, SPEEDING_VIOLATIONS, PAST_ACCIDENTS) CÓ ẢNH HƯỞNG ĐẾN TỈ LỆ YÊU CẦU BẢO HIỂM ?</h3><p id="8591604e-0e7d-4ccf-8bf5-8e87be6b9148" class="">
+</p><figure id="51effe10-535c-4c8b-8513-0e6fe10b4674" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%2010.png"><img style="width:707.96875px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%2010.png"/></a></figure><p id="e70b5f3a-a11f-41a0-a668-50cfbd91b28a" class="">Ta có thể thấy rõ một xu hướng rằng một khách hàng có số lượng vụ tai nạn trong quá khứ càng nhiều thì tỉ lệ bồi thường bảo hiểm càng thấp. Trong khi có tới hơn 40% khách hàng chưa có tai nạn trong quá khứ đã yêu cầu bồi thường bảo hiểm, thì con số này giảm xuống còn khoảng 10% với các khách hàng có nhiều vụ tai nạn trong quá khứ hơn, và gần như không có khách hàng nào có từ 7 vụ tai nạn trong quá khứ trở nên yêu cầu bồi thường bảo hiểm. Tuy xu hướng này không quá khác biệt đáng chú ý, tuy nhiên nó cũng có ta được những nhận xét về nguyên nhân của xu hướng này, <strong>khi mà tại sao các khách hàng có nhiều vụ tai nạn trong quá khứ lại ít yêu cầu bồi thường bảo hiểm như vậy.</strong></p><p id="be63ef58-b3bc-4ec8-b8cf-545a3b587576" class="">
+</p><figure id="48430178-887c-4cc2-989e-4303772c9e58" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%2011.png"><img style="width:707.96875px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%2011.png"/></a></figure><p id="3919549c-05e8-4bf9-9946-982d62cf4706" class="">Khác với thống kê về số tai nạn trong quá khứ ở trên, ở thống kê về vi phạm tốc độ này ta không thấy xu hướng giảm dần về tỉ lệ yêu cầu bồi thường bảo hiểm khi tăng dần về số vụ vi phạm tốc độ. Ngoài nhóm speeding violations= 0 tức là nhóm khách hàng chưa từng vi phạm tốc độ, các nhóm còn lại đều có một tỉ lệ yêu cầu bồi thường giao động trong khoảng từ 10-20%. Từ hai biểu đồ trên, có thể rút ra một nhận xét quan trọng rằng <strong>những khách hàng chưa từng có tiền sử xấu về việc vi phạm tốc độ khi tham gia giao thông hay chưa từng gặp phải tai nạn giao thông lại có một tỉ lệ yêu cầu bồi thường bảo hiểm cao bất thường.</strong></p><h1 id="26acd394-9cfa-41cf-95fc-4c8e7181b697" class="">MODEL</h1><h2 id="3838a597-b4d8-4404-ab60-9ced15316c67" class="">TIỀN XỬ LÍ DATA</h2><p id="b0884ba4-9a4c-4c01-909c-0e9734892f5d" class="">Đầu tiên ta sẽ cần bỏ đi trong dataset các cột chỉ nhận duy nhất 1 giá trị, tức là tất cả khách hàng chỉ nhận duy nhất 1 giá trị (vì cột này không mang giá trị cho model để học), rất may tất cả các chỉ số trong dataset đều có ít nhất 2 giá trị nên ta không cần thực hiện bước này trong tiền xử lí data.</p><p id="361a8555-8040-43d7-8b7b-c0982dba5896" class="">Tiếp theo ta xử lí các biến dạng categorical. Với các cột dữ liệu categorical mà các giá trị là các mức độ, có tương quan với nhau như cột DRIVING EXPERIENCE chỉ về độ thành thạo lái xe, … ta sẽ chuyển về dạng số để mô hình học được sử dụng OrdinalEncoder(), tức là giá trị 0-9y chuyển thành 0, 10-19y chuyển thành 1, … Các cột giá trị categorical chỉ nhận hai giá trị duy nhất như VEHICLE TYPE chỉ có hai loại là sedan/sport car ta sẽ đơn giản đưa về dạng 0-1 để model có thể học được. Cuối cùng còn lại các biến Categorcal mà các giá trị chỉ là các loại khác nhau không có tính tương quan khiến do các giá trị này không có sự tương quan rõ rệt, ta sẽ sử dụng phương pháp OneHotEncoder() để biến dữ liệu về dạng số mô hình có thể học được.       </p><p id="5458b1b4-a82f-4882-bb23-4b67ec1593b1" class="">
+</p><p id="a6055308-3aab-41d3-bc11-530c11917727" class="">Bước cuối cùng trong quá trình tiền xử lí dữ liệu đó là đảm bảo các chỉ số được đóng góp công bằng trong quá trình huấn luyện model, do đó ta sẽ chuẩn hóa tất cả các cột về một khoảng giá trị để không có cột dữ liệu nào chiếm ưu thế. Trong bài toán này, ta sử dụng hàm MinMaxScale() để đưa giá trị của các cột sau khi đã được đưa về dạng số về cùng khoảng giá trị [0, 1]</p><h2 id="e07e3070-caa8-4250-9d4c-4417bea18da8" class="">CHIA TẬP HUẤN LUYỆN/KIỂM TRỬ</h2><p id="9d235116-723a-4641-8f3f-dfa59d1ee6da" class="">Do số lượng samples của chúng ta không quá lớn(2672 samples) nên để ta sẽ chia tỉ lệ tập training data và test data là 80% - 20% để đảm bảo đủ lượng samples cho quá trình training cũng như không quá ít sample dành cho tập test data để đảm bảo kết quả đánh giá các mô hình được chính xác nhất.</p><p id="1ea91c0e-8281-49c8-93de-0042672181de" class="">
+</p><h2 id="cf3d96dc-1acd-4cf9-8181-bc03fda1c8ba" class="">CONFUSION MATRIX</h2><p id="27c13bce-6c2c-418d-9c5c-fe5d6a02a641" class="">Kết quả huấn luyện 4 mô hình Linear Regression, Random Forest, Gradient Boosting, XGBoost được thể hiện qua các Confusion matrix và bảng chỉ số sau:</p><table id="a39fe233-b488-4d59-960b-b6d9df584bee" class="simple-table"><tbody><tr id="3f5924e6-a315-436a-906d-ecdc51b3eb8a"><td id="Pp`y" class=""></td><td id="T&lt;qc" class="" style="width:145px">Linear Regression</td><td id="]VcB" class="" style="width:157px">Random Forest</td><td id="qZS_" class="" style="width:172.2916717529297px">Gradient Boosting</td><td id="dgtm" class="" style="width:155px">XGBoosting</td></tr><tr id="9dead8ac-8781-4764-91e0-31acd31b053d"><td id="Pp`y" class="">Accuracy</td><td id="T&lt;qc" class="" style="width:145px">0.8374</td><td id="]VcB" class="" style="width:157px">0.8505</td><td id="qZS_" class="" style="width:172.2916717529297px">0.8405</td><td id="dgtm" class="" style="width:155px">0.8553</td></tr><tr id="a1aaa327-184c-404c-bd01-38f5f276d3f7"><td id="Pp`y" class="">Precision</td><td id="T&lt;qc" class="" style="width:145px">0.9123</td><td id="]VcB" class="" style="width:157px">0.9037</td><td id="qZS_" class="" style="width:172.2916717529297px">0.9247</td><td id="dgtm" class="" style="width:155px">0.9304</td></tr><tr id="d9a3c05c-7714-48a7-ab6e-07a93f54e7fc"><td id="Pp`y" class="">Recall</td><td id="T&lt;qc" class="" style="width:145px">0.8537</td><td id="]VcB" class="" style="width:157px">0.8753</td><td id="qZS_" class="" style="width:172.2916717529297px">0.8636</td><td id="dgtm" class="" style="width:155px">0.8713</td></tr><tr id="2c470ec7-6d2b-4652-adf8-5e55f3cc1c1c"><td id="Pp`y" class="">F1 Score</td><td id="T&lt;qc" class="" style="width:145px">0.8792</td><td id="]VcB" class="" style="width:157px">0.8907</td><td id="qZS_" class="" style="width:172.2916717529297px">0.8917</td><td id="dgtm" class="" style="width:155px">0.8993</td></tr></tbody></table><h3 id="0d195219-757a-4e11-be41-f0dcd262a4df" class="">CONFUSION MATRIX OF LinearRegression</h3><table id="d4e65e13-bef2-4dda-8f66-8899c2ba9e20" class="simple-table"><tbody><tr id="8441fc2f-d515-4284-9c89-d0b7a3016993"><td id=";GJU" class=""></td><td id="&gt;c\d" class="" style="width:292px"><strong>Predicted= 0</strong></td><td id="CHhb" class="" style="width:334px"><strong>Predicted= 1</strong></td></tr><tr id="7773f2fc-3333-4e9a-86fb-d05b6a2b25ec"><td id=";GJU" class=""><strong>Label= 0</strong></td><td id="&gt;c\d" class="" style="width:292px">172</td><td id="CHhb" class="" style="width:334px">17</td></tr><tr id="06f19d17-cec6-4d60-a566-82674da9ddfe"><td id=";GJU" class=""><strong>Label= 1</strong></td><td id="&gt;c\d" class="" style="width:292px">28</td><td id="CHhb" class="" style="width:334px">51</td></tr></tbody></table><h3 id="d0d51fd6-d494-4cb8-ada8-36d0553bd549" class="">CONFUSION MATRIX OF Random Forest</h3><table id="31641c22-8358-4006-abb8-4c9727769e92" class="simple-table"><tbody><tr id="b95df171-55e7-44a8-ae27-9d80c2640b6a"><td id=";GJU" class=""></td><td id="&gt;c\d" class="" style="width:292px"><strong>Predicted= 0</strong></td><td id="CHhb" class="" style="width:334px"><strong>Predicted= 1</strong></td></tr><tr id="c34a67eb-293f-4773-8531-d27c740d95bf"><td id=";GJU" class=""><strong>Label= 0</strong></td><td id="&gt;c\d" class="" style="width:292px">169</td><td id="CHhb" class="" style="width:334px">20</td></tr><tr id="8751ee36-df0b-4a15-8705-b3a41bce1142"><td id=";GJU" class=""><strong>Label= 1</strong></td><td id="&gt;c\d" class="" style="width:292px">24</td><td id="CHhb" class="" style="width:334px">55</td></tr></tbody></table><h3 id="f548e0c5-0d2d-4cc2-92da-716b5046e737" class="">CONFUSION MATRIX OF Gradient Boosting</h3><table id="2878031e-75b5-427e-a57f-59b34bdf747e" class="simple-table"><tbody><tr id="42a0eb31-8acb-41df-858c-7a207987b22a"><td id=";GJU" class=""></td><td id="&gt;c\d" class="" style="width:292px"><strong>Predicted= 0</strong></td><td id="CHhb" class="" style="width:334px"><strong>Predicted= 1</strong></td></tr><tr id="12dff583-bd58-4cb9-b3d8-40af1df0b7ea"><td id=";GJU" class=""><strong>Label= 0</strong></td><td id="&gt;c\d" class="" style="width:292px">174</td><td id="CHhb" class="" style="width:334px">15</td></tr><tr id="3fe2323c-96e4-45ec-bc4e-1a6925ccf22d"><td id=";GJU" class=""><strong>Label= 1</strong></td><td id="&gt;c\d" class="" style="width:292px">28</td><td id="CHhb" class="" style="width:334px">51</td></tr></tbody></table><h3 id="18f1ef94-ae6c-470b-ba70-718f0e4dd5b3" class="">CONFUSION MATRIX OF XGBoosting</h3><table id="15410617-4540-4a0e-85d3-f2ec1909d58d" class="simple-table"><tbody><tr id="6ca56c63-0789-4f13-9754-a1e14816b1e2"><td id=";GJU" class=""></td><td id="&gt;c\d" class="" style="width:292px"><strong>Predicted= 0</strong></td><td id="CHhb" class="" style="width:334px"><strong>Predicted= 1</strong></td></tr><tr id="5e5ad94b-8665-46a4-b42c-d9371600a562"><td id=";GJU" class=""><strong>Label= 0</strong></td><td id="&gt;c\d" class="" style="width:292px">175</td><td id="CHhb" class="" style="width:334px">14</td></tr><tr id="be737181-d2e4-4cb1-8742-6624ee538de4"><td id=";GJU" class=""><strong>Label= 1</strong></td><td id="&gt;c\d" class="" style="width:292px">26</td><td id="CHhb" class="" style="width:334px">53</td></tr></tbody></table><h3 id="878cf064-8235-4301-aac2-50f3e079c831" class="">ROC CURVE</h3><figure id="61ec3117-4e4d-4fe8-ba74-737c2b0f6bcf" class="image"><a href="CAR%20INSURANCE%2052ad5eab2eb8498880f9fc18c615878c/roc.jpg"><img style="width:577.96875px" src="CAR%20INSURANCE%2052ad5eab2eb8498880f9fc18c615878c/roc.jpg"/></a></figure><p id="5780236d-47fe-41e9-acc5-b1aa167ed385" class="">Để trực quan hóa hơn việc so sánh hiệu quả của bốn model sử dụng ở trên, ta sẽ sử dụng biểu đồ ROC Curve. Từ ROC curve, ta có thể nhận thấy performance của hai model GradientBoosting và XGBoost là tốt nhất, theo sau đó là mô hình RandomForest và mô hình Linear Regression có kết quả kém hơn so với các mô hình còn lại.</p><h3 id="3a183531-2240-4732-b7c1-290dfcc29e44" class="">FEATURE IMPORTANCE</h3><p id="6d0801da-728f-4eaf-a5fb-e0aba2f27fac" class="">Do kết quả của mô hình <strong>GradientBoosing</strong> là tốt nhất nên ta sẽ dùng model này nhắm mục đích kiểm tra yếu tốc feature importance(chỉ số nào có đóng góp quan trọng nhất trong quá trình học của model)</p><figure id="2dea0ea1-3b1d-46d4-af9c-053618406f13" class="image"><a href="CAR%20INSURANCE%2052ad5eab2eb8498880f9fc18c615878c/z5297692012125_d2c100bd276710d81f7e6ca94aaa3a91.jpg"><img style="width:708px" src="CAR%20INSURANCE%2052ad5eab2eb8498880f9fc18c615878c/z5297692012125_d2c100bd276710d81f7e6ca94aaa3a91.jpg"/></a></figure><p id="73335966-40ef-47aa-984a-874e1ea0d280" class="">Nhận xét: Từ biểu đồ Feature Importance, ta có thể thấy các yếu tố liên quan đến xe như driving experience, vehicle ownership có những ảnh hưởng lớn nhất đến mô hình. Ngoài ra các yếu tố liên quan đến thu nhập cá nhân như Income cũng đóng góp 1 phần qua trọng trong việc phân loại hai nhóm khách hàng.</p><p id="62470b27-2504-4214-aa55-092ab18eef16" class="">
+</p><p id="89e7a5d9-dd83-4d47-a672-f94e1d586fc0" class="">
+</p><h1 id="75a758e4-921a-4780-8347-cd2254d8c277" class="">CONCUSION</h1><ul id="766290a8-e581-4e73-aa1f-593744f9aa07" class="bulleted-list"><li style="list-style-type:disc">Là những nhận xét đã bôi đậm ở từng phần, các c có thể đưa thêm các yếu tố về kinh tế thêm dựa trên những nhận xét đó. </li></ul><ul id="c744aab4-91c8-4887-b377-24737ccbe116" class="bulleted-list"><li style="list-style-type:disc">Ví dụ: </li></ul><figure id="4a2bb1ae-35fb-4f53-abd6-235915c81e55" class="image"><a href="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%2012.png"><img style="width:707.96875px" src="CAR%20INSURANCE%202024%2069a0640d30494ae581910d0c5154d513/Untitled%2012.png"/></a></figure><p id="784bc219-327d-4473-a55d-6f5716d2fee4" class="">⇒ Các khách hàng có nhiều vụ tai nạn trong quá khứ sẽ ít yêu cầu bồi thường bảo hiểm hơn, điều này có thể do chính sách của công ty khiến cho những người này như vậy</p><p id="716686c0-5e4a-4c75-89bd-e91b6042a23e" class="">
+</p><p id="16b33509-79a1-4219-93b4-258d35bd053a" class="">
+</p><p id="73e7e120-6f5d-43cb-b6d4-f9176508acac" class="">
+</p><p id="eed5596a-1649-4cb5-88d2-50c7e94df80e" class="">
+</p><p id="c26329d1-78bd-47d4-955d-30c657118a20" class="">
+</p><p id="7d7857a3-39b6-40d1-9be1-37aaa8ce70b9" class="">
+</p><p id="c738eb8e-569e-47dc-a57b-156fc58cbf63" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

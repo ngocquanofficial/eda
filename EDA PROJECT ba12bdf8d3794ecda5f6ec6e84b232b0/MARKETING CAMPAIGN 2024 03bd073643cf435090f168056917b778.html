@@ -1,0 +1,693 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>MARKETING CAMPAIGN 2024</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="03bd0736-43cf-4350-90f1-68056917b778" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://www.notion.so/icons/briefcase_yellow.svg"/></div><h1 class="page-title">MARKETING CAMPAIGN 2024</h1><p class="page-description"></p></header><div class="page-body"><p id="43913e03-7669-4a60-891e-b6666a00070e" class="">
+</p><h1 id="70484ea1-6285-41d1-ba97-611f350e8e7f" class="">Ý NGHĨA CỦA CÁC CHỈ SỐ TRONG DATASET</h1><p id="21c242a5-3472-41c3-be8c-94ec05c59aad" class="">
+</p><ul id="4ca6965d-014d-4fc2-a6ba-f84771bda310" class="bulleted-list"><li style="list-style-type:disc">AcceptedCmp1: 1 nếu khách hàng chấp nhận đề nghị trong chiến dịch thứ nhất, 0 nếu không</li></ul><ul id="69de0acb-f151-4ed2-a2f7-0ee5c948774e" class="bulleted-list"><li style="list-style-type:disc">AcceptedCmp2: 1 nếu khách hàng chấp nhận đề nghị trong chiến dịch thứ hai, 0 nếu không</li></ul><ul id="2832c05b-ac32-44a8-b374-cbaf10566d8a" class="bulleted-list"><li style="list-style-type:disc">AcceptedCmp3: 1 nếu khách hàng chấp nhận đề nghị trong chiến dịch thứ ba, 0 nếu không</li></ul><ul id="58d48772-5fea-499e-8770-b2536aa6acf6" class="bulleted-list"><li style="list-style-type:disc">AcceptedCmp4: 1 nếu khách hàng chấp nhận đề nghị trong chiến dịch thứ tư, 0 nếu không</li></ul><ul id="fef23db6-a335-4041-b054-24d42e4390e0" class="bulleted-list"><li style="list-style-type:disc">AcceptedCmp5: 1 nếu khách hàng chấp nhận đề nghị trong chiến dịch thứ năm, 0 nếu không</li></ul><ul id="dc942c5d-b3d7-43c0-9fc2-873389f9ec2e" class="bulleted-list"><li style="list-style-type:disc">Complain: 1 nếu khách hàng có phàn nàn trong 2 năm qua</li></ul><ul id="0a6f10c1-5bb8-41d2-b8cc-af0d20340847" class="bulleted-list"><li style="list-style-type:disc">DtCustomer: ngày khách hàng bắt đầu tham gia với công ty</li></ul><ul id="f48a056e-d98a-4b57-827c-3fb55a1b846b" class="bulleted-list"><li style="list-style-type:disc">Education: trình độ học vấn của khách hàng</li></ul><ul id="c9befcda-3eaf-4a8a-9a6b-26dea3ddedaf" class="bulleted-list"><li style="list-style-type:disc">Marital: tình trạng hôn nhân của khách hàng</li></ul><ul id="98b4a3cf-7462-43ee-9043-a7fad81b2d53" class="bulleted-list"><li style="list-style-type:disc">Kidhome: số lượng trẻ nhỏ trong hộ gia đình của khách hàng</li></ul><ul id="0739cf20-c18b-4260-be7b-c19a28216549" class="bulleted-list"><li style="list-style-type:disc">Teenhome: số lượng thanh thiếu niên trong hộ gia đình của khách hàng</li></ul><ul id="33793f5f-936e-4b8b-a17a-f8c6494e78ec" class="bulleted-list"><li style="list-style-type:disc">Income: thu nhập hàng năm của hộ gia đình khách hàng</li></ul><ul id="6bb2af3f-5ebe-486c-bb72-c6388ad09652" class="bulleted-list"><li style="list-style-type:disc">MntFishProducts: số tiền chi tiêu cho sản phẩm cá trong 2 năm qua</li></ul><ul id="e3182ca5-f7fd-43e4-84cb-3ee11aaff0a7" class="bulleted-list"><li style="list-style-type:disc">MntMeatProducts: số tiền chi tiêu cho sản phẩm thịt trong 2 năm qua</li></ul><ul id="25f75229-1cfb-413a-b984-7dcf31061d0a" class="bulleted-list"><li style="list-style-type:disc">MntFruits: số tiền chi tiêu cho sản phẩm trái cây trong 2 năm qua</li></ul><ul id="8d70bf3e-3453-49f8-96f1-4506e9e60f0a" class="bulleted-list"><li style="list-style-type:disc">MntSweetProducts: số tiền chi tiêu cho sản phẩm ngọt trong 2 năm qua</li></ul><ul id="a7bdecaa-a115-4e89-a1d8-038a19c09242" class="bulleted-list"><li style="list-style-type:disc">MntWines: số tiền chi tiêu cho sản phẩm rượu vang trong 2 năm qua</li></ul><ul id="f4d96061-88e8-4ebf-aa8d-f54a7357c317" class="bulleted-list"><li style="list-style-type:disc">MntGoldProds: số tiền chi tiêu cho sản phẩm vàng trong 2 năm qua</li></ul><ul id="dd2656ec-9ba7-424c-97bd-dd0a0fb32478" class="bulleted-list"><li style="list-style-type:disc">NumDealsPurchases: số lượng mua hàng có giảm giá</li></ul><ul id="cba664b5-35e0-4e96-81d7-e61ac088e2a6" class="bulleted-list"><li style="list-style-type:disc">NumCatalogPurchases: số lượng mua hàng qua catalogue</li></ul><ul id="fee6ee36-01b4-44ed-a19c-b58ed635a3ca" class="bulleted-list"><li style="list-style-type:disc">NumStorePurchases: số lượng mua hàng trực tiếp tại cửa hàng</li></ul><ul id="c279a1e5-649c-49ed-b81d-8c5b3ea84dd2" class="bulleted-list"><li style="list-style-type:disc">NumWebPurchases: số lượng mua hàng qua website của công ty</li></ul><ul id="34265795-49a0-4600-8a75-9d2df329d67d" class="bulleted-list"><li style="list-style-type:disc">NumWebVisitsMonth: số lần truy cập website của công ty trong tháng qua</li></ul><ul id="48c670e6-4a03-47c7-ad45-2ec7b6462549" class="bulleted-list"><li style="list-style-type:disc">Recency: số ngày kể từ lần mua hàng cuối cùng</li></ul><ul id="8b000f3f-cdef-4277-846b-59f867f17a5f" class="bulleted-list"><li style="list-style-type:disc"><strong>Response (target): 1 nếu khách hàng chấp nhận đề nghị trong chiến dịch cuối cùng, 0 nếu không</strong></li></ul><p id="3251d43d-8d68-406c-ac43-ea1839945d5b" class="">
+</p><h1 id="9a679d4e-50d1-4644-a2ad-92714ad55338" class="">THỐNG KÊ CƠ BẢN</h1><h3 id="c178a001-8ccb-410c-b98a-9b898b8695bb" class="">CÁC THÔNG TIN CƠ BẢN</h3><figure id="8c4d0500-2456-479b-beb1-cedf14646671" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/stats.png"><img style="width:708px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/stats.png"/></a></figure><p id="44e814f3-12b7-4145-9293-4a3784890af8" class="">Nhận xét: Trong data chỉ chiếm số lượng rất nhỏ missing values(24 so với tổng số 2240 của dataset), và các giá trị bị thiếu này chỉ tập trung vào cột chỉ số Income, do đó ta hoàn toàn có thể bỏ những cột này đi mà không ảnh hưởng đến sự đa dạng của dataset, cũng như để tránh tạo ra thêm nhiễu cho bộ dữ liệu.</p><h3 id="d592a19e-b6e5-4d48-9d3a-f458ba8e5290" class="">KIỂM TRA IMBALANCE DATASET</h3><figure id="c7591dc0-dbaf-4918-a4de-f126ac0865d2" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled.png"><img style="width:432px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled.png"/></a></figure><p id="cf3e9ed8-1fb4-48ac-899c-589dc8b9af71" class="">Cột dữ liệu nhãn ở đây là Response là cột dữ liệu categorical chỉ gồm hai giá trị 0 hoặc 1. Để kiểm tra xem đây là một dữ liệu cân bằng hay mất cân bằng, nhóm đã sử dụng biểu đồ Donut Chart để tính tỉ lệ các khách hàng lần lượt thuộc hai nhóm này. Kết quả cho thấy có tới hơn 85% khách hàng trong dataset có Response= 0, gấp tới hơn 5 lần so với nhóm Response=0. Điều này cho thấy dataset của chúng ta rất mất cân bằng, đòi hỏi những phương pháp thống kê dữ liệu hợp lí để tránh đưa ra những nhận xét sai lầm, cũng như cần đánh giá kết quả mô hình dựa trên các metric phù hợp hơn như F1 Score, Precision, Recall thay vì chỉ đánh giá dựa trên Độ chính xác(Accurancy) như thông thường.</p><h3 id="fcbfe2a4-8cd0-435b-9843-d04000677dad" class="">KIỂM TRA OUTLIER</h3><p id="64783649-49c1-422e-8c09-c5db538b5d89" class="">Biểu đồ Violin theo từng chỉ số trong dataset</p><figure id="4379d9ce-aaac-4265-abfc-d7b8cfeff7c6" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/violin.png"><img style="width:384px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/violin.png"/></a></figure><p id="9871652d-8141-4f9b-8abc-2a2069fb2940" class="">Để kiểm tra về outlier có trong dataset, chúng tôi sử dụng biểu đồ violin để kiểm tra về sự phân bố của outlier đối với từng chỉ số có trong dataset. Đầu tiên, chúng tôi lọc ra những cột giá trị kiểu số và có số giá trị khác nhau (unique values) lớn hơn 2 để bỏ qua những cột giá trị kiểu categorical gây nhiễu cho việc sử dụng biểu đồ violin. Từ các biểu đồ ta có thể thấy một số chỉ số phân bố khá đều và có rất ít giá trị outlier như Recency, Year Birth, hay NumStorePurchases. Một số chỉ số khác tuy cũng có ít outlier, tuy nhiên giá trị của những outlier này lệch rất xa so với phần còn lại của dataset, có thể kể đến như Income, NumCatalogPurchases. Cuối cùng là một số cột chỉ số cần lưu ý nhất khi mà có rất nhiều giá trị Outlier có thể gây nhiễu cho dữ liệu như MntFruits, MntMeatProducts, MntFishProduct,…</p><h3 id="bcf16488-4d4e-496c-a9bb-c42e374f4eef" class="">CORRELATION MATRIX</h3><figure id="01c196db-dbfd-4c80-a0f3-cae09abd4131" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/corr_matrix_custom_light_middle.png"><img style="width:708px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/corr_matrix_custom_light_middle.png"/></a></figure><p id="b6f3f642-ca67-4c37-abca-4c2b1e9b933f" class=""><strong>Để thống kê về tác động của từng cột chỉ số đơn lẻ tác động lên nhau, nhóm đã sử dụng biểu đồ Correlation Matrix. Các cặp chỉ số có quan hệ tương đối với nhau (&gt;0.3) là các cột đáng để chúng ta quan tâm đến hơn, và sẽ được biểu diễn bằng một màu đậm hơn để dễ quan sát trong biểu đồ (màu vàng đậm với correlation lớn và thay đổi cùng chiều nhau, màu xanh đậm cho chiều ngược lại). </strong></p><p id="db12738a-58ea-445b-aaa2-0345b692b92f" class="">Đầu tiên, ta thấy rõ được rằng không có bất kì chỉ số nào có hệ số correlation tương đối cao đối với chỉ số Response. Điều này cho thấy độ phức tạp của dataset, khi mà không có một cột dữ liệu đơn lẻ nào có tác động thực sự đến cột dữ liệu Response cần dự đoán, mà các chỉ số kết hợp lại mới tạo ra được ảnh hưởng đối với cột dữ liệu Response.</p><p id="93f23c25-44f4-416a-911e-e41d9f69e4ea" class=""><strong>Có thể thấy rõ được một số cặp chỉ số có quan hệ với nhau chặt chẽ như NumStorePurchase và MntWines(correlation= 0.64) cho thấy rằng rằng cách khách hàng mua số lượng rượu vang lớn thì sẽ có xu hướng mua hàng trực tiếp tại cửa hàng nhiều hơn; Income-NumWebVisitMonth (correlation=-0.55) cho thấy thu nhập càng cao thì số lần khách hàng truy cập website mua hàng càng thấp;…</strong></p><p id="d0a064a7-bc90-40f9-a4ee-7376a4a83f47" class="">
+</p><h1 id="32b2398b-e2d3-4997-be82-02ce330bf2a0" class="">LÀM SẠCH DỮ LIỆU</h1><p id="cb33ac8b-e1b7-4757-a0d3-ff8c55324372" class="">
+</p><p id="0a6eb7c4-28b6-4e66-861a-afaa3cde1415" class=""><strong>BỎ NHỮNG CỘT KHÔNG CẦN THIẾT</strong></p><ul id="48594dba-05c9-4b13-9651-e34393194712" class="bulleted-list"><li style="list-style-type:disc">Chỉ số Z_Revenue và Z_CostContact chỉ có duy nhất 1 giá trị đối với tất cả samples ⇒ Bỏ chỉ số này đi vì không có bất kì ý nghĩa gì (Do tất cả samples đều có giá trị như nhau)</li></ul><p id="d095e08d-15c6-4a1b-9b8b-2cbab5875ef1" class=""><strong>XỬ LÍ MISSING VALUES</strong></p><p id="f99f1a90-fbaa-46f2-92f9-3cb3a2ec4e75" class="">Ta cần xem xét trong những samples có missing values thì phân bố của nó theo nhãn Response có phải là hoàn toàn ngẫu nhiên.</p><figure id="66324cf6-00ae-4690-84e9-bf1299530572" class="image"><a href="MARKETING%20CAMPAIGN%20-%20FTU%20PROJECT%20443d93e4533c46eeb0faadf46ccc995f/Untitled%202.png"><img style="width:288px" src="MARKETING%20CAMPAIGN%20-%20FTU%20PROJECT%20443d93e4533c46eeb0faadf46ccc995f/Untitled%202.png"/></a></figure><p id="12c70aaf-1cda-4b07-bf66-38b9e511bd2d" class="">Trong tổng số 24 samples chứa missing values, chỉ có 1 sample có Response= 1, còn lại 23 samples có Response= 0. Như vậy có 23/1906 samples thuộc nhóm Response= 0 và 1/334 samples thuộc nhóm Response= 1 có missing values, tỉ lệ này là đủ nhỏ để ta có thể bỏ những samples này đi.</p><h1 id="f75acd40-34b7-44b5-b160-0a1220b5c28f" class="">EDA</h1><h2 id="78adac17-cef7-4314-be98-84b70e1a25c3" class="">THỐNG KÊ CHUNG VỀ DATASET</h2><h3 id="4e3b4273-df61-4c60-8ead-d73ea2d1f3ff" class=""><strong>DASHBOARD </strong></h3><figure id="514787e0-701b-448f-9857-675bae40fe62" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%201.png"><img style="width:708px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%201.png"/></a></figure><h3 id="f947d3a9-bc4d-4abb-8270-e9ca696d7dc6" class="">TRÌNH ĐỘ HỌC VẤN</h3><figure id="595a5496-355b-4fab-91af-98f2362e4a36" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%202.png"><img style="width:1552px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%202.png"/></a></figure><p id="3474cf02-3f24-4cf7-85c0-ef37e517b291" class="">Có thể thấy hầu hết khách hàng được thống kê trong dataset đã tốt nghiệp đại học (chỉ trừ 2.41% khách hàng có học vấn Basic). Đáng chú ý trong đó có tới 21.7% số lượng khách hàng có trình độ tiến sĩ, khoảng 25% khách hàng có trình độ thạc sĩ hoặc tương đương(bao gồm Master và 2n Cycle). Điều này cho ta thấy các khách hàng được thống kê trong dataset nhìn chung có trình độ học vấn tương đối cao.</p><h3 id="5d4541fa-de7f-4c8e-9c95-9b571aa6eb59" class=""><strong>TỈ LỆ VỀ ĐỘ TUỔI CỦA NHÓM KHÁCH HÀNG</strong></h3><figure id="36884bab-577d-40a2-94b7-bbb60d1964cd" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%203.png"><img style="width:1410px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%203.png"/></a></figure><p id="0d14cdc2-6d6d-4b27-81cf-3e7fbd8240a9" class="">Có thể thấy năm sinh của các khách hàng trong dataset phân bố rất đa dạng, trải dài từ 1940 đến 2000. Nhìn chung có thể coi phân bố này là hợp của hai phân phối chuẩn, phân phối thứ nhất có giá trị trung bình vào khoảng 1950, phân phối thứ hai có giá trị vào khoảng 1975. <strong>Điều này cho ta nhận xét rằng ta có thể coi các khách hàng trong dataset bao gồm hai nhóm đối tượng chính là nhóm khách hàng lớn tuổi(ứng với phân phối chuẩn thứ nhất) và nhóm khách hàng ít tuổi hơn(ứng với phân phối chuẩn thứ hai)</strong></p><h3 id="37139032-40c7-4c7f-8aba-dc49d009658d" class=""><strong>CHÊNH LỆCH VỀ THU NHẬP GIỮA CÁC KHÁCH HÀNG</strong></h3><figure id="c1766850-3e4f-4f72-a38d-46ff9893fcf1" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%204.png"><img style="width:892px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%204.png"/></a></figure><p id="f24d208f-8e42-4cd8-a0e4-ccc2c736c286" class="">Nhóm sử dụng biểu đồ đường để thống kê về thu nhập của các khách hàng có trong dataset. Do chỉ số Income nhận các giá trị liên tục, phân bổ rất rộng nên chúng tôi gộp các khách hàng có thu nhập trong khoảng 1000 lại thành một nhóm và vẽ biểu đồ đường dựa trên các nhóm này để cho biểu đồ của chúng ta ít chịu tác động bởi nhiễu và tập trung và xu hướng phân bố của giá trị Income. Kết quả cho thấy hầu hết khách hàng trong dataset có thu nhập từ 20000 đến khoảng 80000, chỉ một số ít khách hàng có thu nhập thấp dưới 20000 và có thu nhập cao trên 80000. Có một lượng nhỏ khách hàng outlier có thu nhập rất cao khoảng 150000, ngoài ra cũng có một số lượng rất ít khách hàng có thu nhập cao hơn trên 150000 chúng tôi không đưa vào biểu đồ do số lượng quá ít không thể biểu diễn cũng như khiến cho biểu đồ khó nhìn hơn. Điều này đã được chúng tôi thể hiện ở phần biểu đồ violin thống kê về outlier.</p><h2 id="dfa7af3a-0296-4a43-82d8-714eff4f8ac8" class=""><strong>PHÂN TÍCH CÁC YẾU TỐ ẢNH HƯỞNG ĐẾN QUYẾT ĐỊNH CỦA KHÁCH HÀNG</strong></h2><h3 id="628a6af4-558b-461a-b4ef-359ff7fa55f7" class="">DASHBOARD</h3><figure id="322c56dc-1b86-49c4-9619-29c04242b7ea" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%205.png"><img style="width:1534px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%205.png"/></a></figure><h3 id="c09f93bc-91b6-477d-9931-0941901c1ddc" class=""><strong>THỐNG KÊ VỀ SỐ TIỀN CHI TIÊU VÀ THU NHẬP GIỮA 2 NHÓM KHÁCH HÀNG (biểu đồ scatterplot)</strong></h3><figure id="a5087964-374a-4591-ac5f-b000869d0ba3" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%206.png"><img style="width:1410px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%206.png"/></a></figure><p id="c7f00e06-8e11-4422-b083-f97038a8a5e5" class="">Tổng số tiền chi tiêu của khách hàng, hay nói cách khách chính là doanh thu bán hàng của doanh nghiệp, là một trong những yếu tố quan trọng nhất mà doanh nghiệp chú ý đến, và cũng là một trong những chỉ số doanh nghiệp chú trọng cải thiện nhất. Số tiền chi tiêu của khách hàng có lẽ sẽ bị ảnh hưởng lớn bởi thu nhập của khách hàng. Do đó chúng tôi vẽ biểu đồ scatter plot về quan hệ giữa tổng số tiền chi tiêu-Thu nhập giữa hai nhóm khách hàng. <strong>Ta có thể thấy rõ xu hướng các khách hàng có Response=1 (các chấm màu vàng trên biểu đồ) có xu hướng phân bố ở phía bên phải nhiều hơn, tức là có xu hướng có tổng số tiền chi tiêu nhiều hơn.</strong> Ngoài ra, có thể thấy một số lượng rất lớn các khách hàng có Response=0 (điểm màu xanh) tập trung ở vùng tương ứng với mức chi tiêu bằng 0, <strong>cho thấy trong nhóm Response=0 có tỉ lệ lớn hơn những khách hàng gần như không chi tiêu. </strong>Đối với nhóm khách hàng có thu nhập lớn hơn (50000) thì xu hướng này giảm đi khi không còn một lượng lớn khách hàng tập trung ở vùng Số tiền chi tiêu=0.</p><h3 id="7b639059-7c38-47e8-8a51-b1fe8ec54896" class=""><strong>NHỮNG KHÁCH HÀNG CHẤP NHẬN CHIẾN DỊCH MARKETING LÀ NHỮNG NGƯỜI ĐÃ MUA HÀNG GẦN ĐÂY?</strong></h3><figure id="c5f8ebc4-78d2-4e02-9989-3e522b85dafa" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/recency_by_response.png"><img style="width:1500px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/recency_by_response.png"/></a></figure><p id="4c883f5e-4769-4a68-ab08-8977da973bfe" class="">Chúng tôi vẽ biểu đồ boxplot để thống kê sự khách biệt giữa hai nhóm khách hàng về số ngày kể từ lần mua hàng cuối cùng của hai nhóm. <strong>Có thể thấy rằng nhóm khách hàng Response=1 có số ngày mua hàng kể từ lần cuối cùng nhỏ hơn hẳn, cho thấy chiến dịch marketing đã thực sự có hiệu quả để khiến cho những khách hàng này quay trở lại mua hàng gần đây.</strong></p><h3 id="a76f2eae-770b-492f-89b8-3927b5aff3fc" class=""><strong>HÀNH VI CHI TIÊU GIỮA HAI NHÓM KHÁCH HÀNG</strong></h3><figure id="9338f077-c367-4d45-9fcc-3cc9fbcb2dc4" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%207.png"><img style="width:708px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%207.png"/></a></figure><p id="0721a2f6-0b19-4093-b16e-9198bc4df235" class="">Chúng tôi vẽ hai biểu đồ tròn tương ứng với hai nhóm khách hàng để thống kê xem có sự khác biệt nào về hành vi chi tiêu giữa hai nhóm khách hàng này. <strong>Kết quả cho thấy trong hai nhóm khách hàng không hề có sự khác biệt tương đối nào về tỉ lệ số tiền chi tiêu cho các mặt hàng khác nhau.</strong> Cả hai nhóm khách hàng đều dành tiền cho rượu vang nhiều nhất với khoảng 50% tổng số tiền chi tiêu, và dành tiền để mua đồ ngọt ít nhất với dưới 5% tổng số tiền ở cả hai nhóm khách hàng.</p><h3 id="e6acb755-1d30-463d-815c-ca8274a94aab" class=""><strong>NHÓM KHÁCH HÀNG CHẤP NHẬN VỚI CHIẾN DỊCH MKT LÀ KHÁCH HÀNG MỚI HAY CŨ</strong></h3><figure id="53ea2bd2-38aa-4e26-9fe9-913b1de97179" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%208.png"><img style="width:1112px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%208.png"/></a></figure><p id="59472cf3-81a4-4189-a305-c9e74c87494d" class=""><mark class="highlight-yellow_background">Chúng tôi sử dụng hai biểu đồ đường thể hiện số ngày kể từ khi tham gia mua hàng của hai nhóm khách hàng. Cần lưu ý rằng do bản chất của dataset là mất cân bằng nên số lượng khách hàng thuộc nhóm Response= 0 đương nhiên sẽ nhiều hơn rất nhiều so với khách hàng thuộc nhóm Response=1, do đó việc dùng chung trong một biểu đồ như phía trên đây sẽ gây ra hiểu nhầm. Do đó chúng tôi tách riêng hai nhóm khách hàng như biểu đồ sau:</mark></p><figure id="7512bccb-c6c2-4446-94c2-68bdf9c01f42" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%209.png"><img style="width:432px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/Untitled%209.png"/></a></figure><p id="907cfbac-fd40-4974-a74b-fb6ae1228101" class="">Từ biểu đồ này, ta có thể thấy rõ được một xu hướng rằng trong khi với nhóm khách hàng Response=1, số lượng khách hàng tăng theo số ngày kể từ khi tham gia, tức là khách hàng tham gia mau hàng từ lâu chiếm đa số trong nhóm này, thì đối với nhóm khách hàng Response= 0 lại chứng kiến xu hướng ngược lại. Có rất ít khách hàng trong nhóm Response= 1 tham gia mua hàng lần đầu tiên từ lâu (trên 400 ngày). <strong>Điều này cho ta thấy được rằng các chiến dịch marketing của công ty đang khiến cho các khách hàng tham gia từ lâu có xu hướng không chấp nhận chiến dịch.</strong></p><p id="7782cb9c-0de9-46c3-936f-97ff4b6fd833" class="">
+</p><h2 id="67c9ab85-7422-4cd0-a333-3b29d539bbc6" class="">VISUALIZE TRENDS</h2><p id="cf9c63bb-2cd3-42c4-85b6-4d28f2e9555f" class="">Trong phần này, chúng tôi sẽ thống kê về các xu hướng thay đổi theo thời gian, các chỉ số biến động theo thời gian</p><h3 id="80ebee28-b5e7-4d63-855c-33afe76ff303" class=""><strong>XU HƯỚNG VỀ TẦN SUẤT MUA HÀNG, SỐ TIỀN CHI TIÊU CŨNG NHƯ SỐ LƯỢNG KHÁCH HÀNG THAM GIA</strong></h3><figure id="2a1d5694-f165-4af2-987d-3e4bd9b27da4" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/buy_trend_scaled.png"><img style="width:1400px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/buy_trend_scaled.png"/></a></figure><p id="2f9c9441-a272-4cf4-ab32-ae81c24a3766" class="">Chúng tôi sẽ vẽ biểu đồ kết hợp các biểu đồ đường để thống kê về xu hướng mua sắm của các khách hàng theo thời gian. Chúng tôi sẽ sử dụng kết hợp 3 biểu đồ đường theo thời gian thống kê các chỉ số liên quan đến xu hướng mua sắm của khách hàng bao gồm tổng số khách hàng tham gia, tổng số lần mua hàng và tổng số tiền chi tiêu. Từ biểu đồ ta có thể thấy các xu hướng này có tỉ lệ tương đối với nhau, tức là chúng cùng tăng hoặc cùng giảm theo thời gian. <strong>Điều này có thể dẫn đến nhận xét ba yếu tố này luôn có cùng xu hướng, doanh nghiệp muốn thúc đẩy một trong ba xu hướng có thể thực hiện gián tiếp thông qua hai chỉ số còn lại, lấy ví dụ doanh nghiệp muốn tăng doanh thu có thể tạo ra các chiến dịch khiến cho khách hàng tham gia nhiều hơn hoặc khiến cho khách hàng mua hàng nhiều lần hơn.</strong></p><h3 id="c60d1c5d-2e38-41c0-98bc-1c9252d22715" class=""><strong>XU HƯỚNG VỀ THÓI QUEN MUA HÀNG QUA WEBSITE</strong><strong><a href="https://kkb-production.jupyter-proxy.kaggle.net/static/assets/jupyterlab/jupyterlab-index-aba321dd412ce45028c7.html?session=eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJpc3MiOiJrYWdnbGUiLCJhdWQiOiJjbGllbnQiLCJzdWIiOiJuZ29jcXVhbm9mZmljaWFsIiwibmJ0IjoiMjAyNC0wNi0xMFQxODozMjo0NC40MzkyMTYwWiIsImlhdCI6IjIwMjQtMDYtMTBUMTg6MzI6NDQuNDM5MjE2MFoiLCJqdGkiOiJjZWM5YWM3My03ZDMxLTQyNzYtYWMzNy0zNmFmNjcyYzA3ZmMiLCJleHAiOiIyMDI0LTA3LTEwVDE4OjMyOjQ0LjQzOTIxNjBaIiwidWlkIjoxMTAxNjg4MCwiZGlzcGxheU5hbWUiOiJRdcOibiBQaOG6oW0gTmfhu41jIiwiZW1haWwiOiJuZ29jcXVhbi5vZmZpY2lhbEBnbWFpbC5jb20iLCJ0aWVyIjoiTm92aWNlIiwidmVyaWZpZWQiOnRydWUsInByb2ZpbGVVcmwiOiIvbmdvY3F1YW5vZmZpY2lhbCIsInRodW1ibmFpbFVybCI6Imh0dHBzOi8vc3RvcmFnZS5nb29nbGVhcGlzLmNvbS9rYWdnbGUtYXZhdGFycy90aHVtYm5haWxzL2RlZmF1bHQtdGh1bWIucG5nIiwiZmYiOlsiS2VybmVsc0RyYWZ0VXBsb2FkQmxvYiIsIktlcm5lbHNGaXJlYmFzZUxvbmdQb2xsaW5nIiwiQWxsb3dGb3J1bUF0dGFjaG1lbnRzIiwiS2VybmVsc1NhdmVDZWxsT3V0cHV0IiwiRnJvbnRlbmRFcnJvclJlcG9ydGluZyIsIkRpc2N1c3Npb25zUmVhY3Rpb25zIiwiRGF0YXNldFVwbG9hZGVyRHVwbGljYXRlRGV0ZWN0aW9uIiwiRGF0YXNldHNMbG1GZWVkYmFja0NoaXAiLCJNZXRhc3RvcmVDaGVja0FnZ3JlZ2F0ZUZpbGVIYXNoZXMiLCJBbGxSb3V0ZXNUb1JlYWN0Um91dGVyIl0sImZmZCI6eyJLZXJuZWxFZGl0b3JBdXRvc2F2ZVRocm90dGxlTXMiOiIzMDAwMCIsIkVtZXJnZW5jeUFsZXJ0QmFubmVyIjoie30iLCJDbGllbnRScGNSYXRlTGltaXRRcHMiOiI0MCIsIkNsaWVudFJwY1JhdGVMaW1pdFFwbSI6IjUwMCIsIkZlYXR1cmVkQ29tbXVuaXR5Q29tcGV0aXRpb25zIjoiNjAwOTUsNTQwMDAsNTcxNjMsODA4NzQiLCJBZGRGZWF0dXJlRmxhZ3NUb1BhZ2VMb2FkVGFnIjoiZGlzYWJsZWQiLCJNb2RlbElkc0FsbG93SW5mZXJlbmNlIjoiMzMwMSwzNTMzIiwiTW9kZWxJbmZlcmVuY2VQYXJhbWV0ZXJzIjoieyBcIm1heF90b2tlbnNcIjogMTI4LCBcInRlbXBlcmF0dXJlXCI6IDAuNCwgXCJ0b3Bfa1wiOiA1IH0iLCJDb21wZXRpdGlvbk1ldHJpY1RpbWVvdXRNaW51dGVzIjoiMzAifSwicGlkIjoia2FnZ2xlLTE2MTYwNyIsInN2YyI6IndlYi1mZSIsInNkYWsiOiJBSXphU3lBNGVOcVVkUlJza0pzQ1pXVnotcUw2NTVYYTVKRU1yZUUiLCJibGQiOiJkNjg0Yzk1MDRkMTg4ZjAzM2M4NjZlYjgyZWJhODI2ZmJhNjMyOWIzIn0.&amp;lsp=true#XU-H%C6%AF%E1%BB%9ANG-V%E1%BB%80-TH%C3%93I-QUEN-MUA-H%C3%80NG-QUA-WEBSITE">¶</a></strong></h3><figure id="8414d3f0-2738-4465-8090-a56c51d5000d" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/webvisit_web_purchases.png"><img style="width:1500px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/webvisit_web_purchases.png"/></a></figure><p id="a7fb28a5-7774-409d-9183-04f479fa0de3" class="">Biểu đồ trên thể hiện xu hướng mua hàng qua website của khách hàng qua thời gian.<strong> Từ biểu đồ ta có thể thấy rõ được xu hướng giảm về số khách hàng truy cập website bán hàng cũng như số lượng khách hàng mua hàng online qua website.</strong> <strong>Ngoài ra thì hai giá trị này cũng có cùng xu hướng tăng giảm giống nhau, yêu cầu doanh nghiệp cần đưa ra các giải pháp để tăng số lượng khách hàng truy cập website của mình nếu doanh nghiệp muốn cải thiện doanh thu bán hàng online qua website của mình.</strong></p><p id="80d2840a-73f7-4408-9b07-c9f01f5c48c0" class="">
+</p><h1 id="45dced0f-709c-447a-b3bb-6c62a8ed2e68" class="">MODEL</h1><h3 id="79c29cc8-a064-4e29-a11e-f904427ebfbe" class="">TIỀN XỬ LÍ DỮ LIỆU</h3><p id="14340d71-f5e5-4d85-be5a-ffd1adc35786" class="">Cột ID chỉ là các số ngẫu nhiên để gán cho các khách hàng để phân biệt, mang tính ngẫu nhiên không có bất kì ý nghĩa gì trong bài toán này =&gt; Ta sẽ bỏ cột ID đi để tránh gây ra nhiễu cho model</p><p id="d96dcc28-d799-494a-966e-88da23a5700d" class="">Để model có thể học được ta cần đưa tất cả các chỉ số về dạng số. Trong dataset hầu hết các chỉ số đều đã ở dạng số, ta chỉ cần xử lí thêm một số cột data có dạng categorical.</p><p id="d917c745-fadd-4969-938b-5caa6334c468" class="">Đầu tiên ta xử lí các biến categorical chỉ giá trị mức độ, tức là các giá trị này có sự liên quan nhất định đến nhau theo mức độ. Lấy vị dụ trong dữ liệu chỉ có cột Education chỉ mức độ học vấn là thuộc nhóm này, ta sẽ xử lí data bằng OrdinalEncoder(), tức là giá trị Basic chuyển thành 1, Graduation chuyển thành 2, 2n cycle chuyển thành 3, Master chuyển thành 4 và PhD chuyển thành 5.</p><p id="888c593d-ad25-415f-9c46-cff9acf8cb89" class="">Tiếp theo ta xử lí các chỉ số categorical dạng Boolean chỉ nhận hai giá trị đối lập nhau, ví dụ như chỉ số Marital_Status, ta chỉ đơn giản chuyển thành giá trị 0 - 1.</p><p id="37215604-85d4-4f85-a9cd-30cbb11cfd60" class="">Sau khi xử lí các bước trên, trong dataset vẫn còn một chỉ số chưa ở dạng numeric có thể học được đó là chỉ số Dt_Customer. Đây là chỉ số chỉ số liệu về thời gian, do đó để chuyển về dạng numeric, ta sẽ dùng hàm to_datetime sau đó sử dụng max() để tìm ra ngày gần nhất được thu thập trong dataset. Sau đó, với một dữ liệu của cột Dt_Customer, ta sẽ lấy ngày gần nhất đó trừ đi sẽ ra được cột dữ liệu Days_Since_Start có kiểu giá trị nguyên, mang ý nghĩa là số ngày kể từ khi khách hàng bắt đầu mua hàng đến ngày cuối cùng được ghi chú trong data.</p><p id="6e7e5d39-180e-4bee-82dd-f2d18fff98b5" class="">Ta vẫn dữ lại các cột dữ liệu được tạo thêm trong quá trình EDA như MntTotal, NumAllPurchases, tất cả chúng đều đã ở dạng numeric nên ta sẽ không cần phải xử lí gì thêm.</p><h3 id="220a093f-0a0e-4f33-9f8f-a4ef063385d7" class="">HUẤN LUYỆN MÔ HÌNH</h3><p id="bbcb494e-d31c-4741-b89f-b61f7c503073" class=""><strong>Phương pháp Grid Search: Tìm bộ hệ số tốt nhất cho Model</strong></p><p id="f3f730a8-b137-4232-a55e-5432738bf77d" class="">Trong thư viện sklearn chúng ta có thể sử dụng GridSearchCV để tạo không gian tham số. GridSearchCV sẽ thăm dò các bộ tham số trong tập từ điển tham số và huấn luyện mô hình với từng bộ tham số đấy để xác định mô hình tốt nhất</p><p id="013582ab-5621-4cef-acee-d0e931dd1de9" class="">Đối với bài toán Regression dự đoán kết quả của cột dữ liệu Response dựa trên các chỉ số khác của data, nhóm sẽ thử nghiệm các mô hình Logistic Regression, Gradient Boosting, AdaBoost, Decision Tree và Random Forest và so sánh kết quả đạt được của các mô hình. </p><figure id="0149641f-e47d-44b3-a38c-166b718cdec1" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/LogisticRegression_confusion_matrix.png"><img style="width:384px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/LogisticRegression_confusion_matrix.png"/></a></figure><figure id="3d13282c-64ff-47aa-acb7-d68e08a2db15" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/DecisionTreeClassifier_confusion_matrix.png"><img style="width:432px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/DecisionTreeClassifier_confusion_matrix.png"/></a></figure><figure id="f3e6c799-35b0-466d-8fd0-e94799b3a8a2" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/GradientBoostingClassifier_confusion_matrix.png"><img style="width:336px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/GradientBoostingClassifier_confusion_matrix.png"/></a></figure><figure id="0f18ec92-9458-404e-ba1b-cb8f1ce4ea20" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/AdaBoostClassifier_confusion_matrix.png"><img style="width:384px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/AdaBoostClassifier_confusion_matrix.png"/></a></figure><figure id="ddfd29d6-c948-4d9d-b7b9-8f94bfffcb1a" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/RandomForestClassifier_confusion_matrix.png"><img style="width:336px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/RandomForestClassifier_confusion_matrix.png"/></a></figure><p id="7809be0a-9c65-45f2-a0fc-0525849d071a" class=""><strong>Với mỗi mô hình, nhóm sẽ đánh giá chất lượng mô hình dựa trên các chỉ số: Accurancy, Precision, Recall và F1 Score</strong></p><table id="8b3bf5ac-b69a-47c7-8fd6-dfcb08da2f4a" class="simple-table"><tbody><tr id="65fd384e-74de-40dc-93f7-7c87da7e140b"><td id="}wwW" class=""></td><td id="husY" class="">LogisticRegression</td><td id="T_|i" class="">Decision Tree</td><td id="\}tB" class="">GradientBoosting</td><td id="I:OC" class="">AdaBoost</td><td id="`dvl" class="">Random Forest</td></tr><tr id="10e56236-7c51-4dca-826d-9e57d1c9d191"><td id="}wwW" class="">Accurancy</td><td id="husY" class="">88.92%</td><td id="T_|i" class="">93.69%</td><td id="\}tB" class="">99.10%</td><td id="I:OC" class="">99.10%</td><td id="`dvl" class="">95.84%</td></tr><tr id="d3d3e0de-5946-42f6-ae80-754b4944a20c"><td id="}wwW" class="">Precision</td><td id="husY" class="">0.67</td><td id="T_|i" class="">0.78</td><td id="\}tB" class="">0.94</td><td id="I:OC" class="">0.94</td><td id="`dvl" class="">0.8636</td></tr><tr id="0f940026-5001-4f7e-941b-c126f0fa7f32"><td id="}wwW" class="">Recall</td><td id="husY" class="">0.41</td><td id="T_|i" class="">0.76</td><td id="\}tB" class="">0.99</td><td id="I:OC" class="">0.99</td><td id="`dvl" class="">0.9194</td></tr><tr id="391cb855-864e-4131-a19f-d8e511cf9eae"><td id="}wwW" class="">F1 Score</td><td id="husY" class="">0.51</td><td id="T_|i" class="">0.77</td><td id="\}tB" class="">0.97</td><td id="I:OC" class="">0.96</td><td id="`dvl" class="">0.8906</td></tr></tbody></table><p id="e7baacd8-68b6-4aa7-ae6a-b0be4a76c001" class="">
+</p><h2 id="5b249507-299a-4a48-a587-bbe232fccbf1" class="">ROC CURVE</h2><figure id="aafb3508-856f-4312-b85e-8e8889016e31" class="image"><a href="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/roc_curve.png"><img style="width:708px" src="MARKETING%20CAMPAIGN%202024%2003bd073643cf435090f168056917b778/roc_curve.png"/></a></figure><p id="68886b7c-fdc8-4ab8-b06d-c0f00714bce7" class="">Chúng tôi sử dụng ROC Curve để trực quan hơn kết quả của các model. Từ biểu đồ có thể thấy rõ được rằng Logistic Regression có kết quả thấp nhất, tiếp theo là đến RandomForest và DecisionTree có kết quả tương đương nhau. Các model boosting bao gồm AdaBoost và GradientBoosting cho kết quả tốt nhất với bài toán này, tỉ lệ chính xác gần như tuyệt đối trên tất cả các metric accurancy, precision, recall và f1 score</p><p id="00fb978a-3619-4972-a483-2c7ce65dca10" class="">
+</p><h1 id="e7403383-1b6f-4718-ad81-b70088023d31" class="">KẾT LUẬN</h1><ul id="f6dc22c0-1ebd-47f1-a7c5-515e3c7b4689" class="bulleted-list"><li style="list-style-type:disc">Số lượng khách hàng có Response=1 (chấp nhận chiến dịch marketing) vẫn còn rất thấp chỉ khoảng hơn 15%. </li></ul><ul id="5159ffe4-c045-4e5c-b094-6b209f683a1e" class="bulleted-list"><li style="list-style-type:disc">Từ biểu đồ correlation matrix, ta có thể thấy không có bất kì một cột dữ liệu đơn lẻ nào có tác động đáng kể đến cột dữ liệu mục tiêu Response. Điều này cho thấy ta cần xem xét điều chỉnh đồng thời nhiều yếu tố khác nhau mới tạo nên được sự thay đổi mong muốn đối với khách hàng (ví dụ muốn khách hàng trở nên Response=1 nhiều hơn,…)</li></ul><ul id="f3251598-d5df-4154-96f9-5112dc00ac69" class="bulleted-list"><li style="list-style-type:disc">Nhìn chung nhóm khách hàng được khảo sát trong dataset là nhóm khách hàng có học vấn cao (khoảng 50% có bằng đại học, 47% có bằng thạc sĩ trở lên, chỉ dưới 3% chưa tốt nghiệp đại học) và phần lớn số khách hàng cũng có thu nhập cao. Điều này đòi hỏi doanh nghiệp cần có những chiến lược phù hợp với nhóm khách hàng có thu nhập/trình độ học vấn cao này.</li></ul><ul id="4bc48c34-70da-4687-87ce-3cd9bae7ab29" class="bulleted-list"><li style="list-style-type:disc">Từ biểu đồ phân tích độ tuổi, ta có thể thấy các khách hàng trong dataset có thể chia làm hai nhóm khách hàng, nhóm thứ nhất là khách hàng lớn tuổi có năm sinh trung bình vào khoảng 1950, nhóm còn lại có năm sinh trung bình vào khoảng 1975. Điều này cho thấy doanh nghiệp cần chú trọng đến việc có những chiến lược riêng phù hợp cho từng nhóm đối tượng khách hàng.</li></ul><ul id="aef32c2b-2c77-44a4-9e85-d283fa6bf5e8" class="bulleted-list"><li style="list-style-type:disc">Từ biểu đồ scatter plot…,<strong> </strong>Ta có thể thấy rõ xu hướng các khách hàng có Response=1 có xu hướng chi tiêu nhiều tiền hơn đáng kể so với nhóm khách hàng còn lại, ngoài ra trong nhóm Response=0 có tỉ lệ đáng kể những khách hàng gần như không chi tiêu. Điều này cho thấy mức độ quan trọng của việc khiến cho các khách hàng của công ty trở nên chấp nhận với chiến dịch marketing, từ đó gián tiếp tạo ra doanh số cao hơn cho công ty.</li></ul><ul id="defb9ea6-1107-4d7a-99dc-891f43aeb77e" class="bulleted-list"><li style="list-style-type:disc">Từ biểu đồ boxplot, Có thể thấy rằng nhóm khách hàng Response=1 có số ngày mua hàng kể từ lần cuối cùng nhỏ hơn hẳn, cho thấy chiến dịch marketing đã thực sự có hiệu quả để khiến cho những khách hàng này quay trở lại mua hàng gần đây.</li></ul><ul id="1fbd4872-ce61-47ce-a812-0e97b1ab6a1d" class="bulleted-list"><li style="list-style-type:disc">Trong hai nhóm khách hàng không hề có sự khác biệt tương đối nào về tỉ lệ số tiền chi tiêu cho các mặt hàng khác nhau, cho thấy rằng doanh nghiệp không cần quá chú trọng về việc ưu tiên hơn một loại sản phẩm cụ thể nào.</li></ul><ul id="01dd4728-4327-409c-bc5a-973526e8ef45" class="bulleted-list"><li style="list-style-type:disc">Từ biểu đồ thống kê mua hàng lần đầu, ta thấy được rằng các chiến dịch marketing của công ty đang khiến cho các khách hàng tham gia mua hàng lần đầu từ lâu có xu hướng không chấp nhận chiến dịch. Điều này cho thấy công ty cần phải có thêm những nghiên cứu về nhóm khách hàng đã tham gia mua hàng lần đầu từ lâu để có hướng tiếp cận marketing tốt hơn với nhóm khách hàng này.</li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

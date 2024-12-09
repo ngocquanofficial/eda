@@ -1,0 +1,692 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>ATTRITION Project (FTU)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="d6f9d2b6-ad78-4cb2-82fe-1df54beee7a3" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://www.notion.so/icons/chart-pie_orange.svg"/></div><h1 class="page-title">ATTRITION Project (FTU)</h1><p class="page-description"></p></header><div class="page-body"><h2 id="8754e7f4-5415-43b7-aa60-000f35452ffc" class="">NOTE: Nhấn Ctrl Shift L để chuyển màu nền từ đen/trắng và ngược lại</h2><h1 id="62fc2b1d-66b6-4754-9e34-bef268cf90c3" class="">Ý nghĩa của từng chỉ số trong bảng</h1><p id="48ba679d-4919-4152-9bae-69ac17d15676" class="">1 Age -&gt; Tuổi của nhân viên<br/>2 Gender -&gt; Giới tính của nhân viên<br/>3 BusinessTravel -&gt; Tần suất đi công tác của nhân viên<br/>4 DailyRate -&gt; Mức lương hàng ngày của nhân viên<br/>5 Department -&gt; Bộ phận công tác của nhân viên<br/>6 DistanceFromHome -&gt; Khoảng cách từ nhà đến nơi làm việc của nhân viên<br/>7 Education -&gt; Trình độ học vấn đạt được của nhân viên<br/>8 EducationField -&gt; Lĩnh vực học vấn của nhân viên<br/>9 EmployeeCount -&gt; Tổng số nhân viên trong tổ chức<br/>10 EmployeeNumber -&gt; Mã số định danh duy nhất cho mỗi hồ sơ nhân viên<br/>11 EnvironmentSatisfaction -&gt; Sự hài lòng của nhân viên với môi trường làm việc của họ<br/>12 HourlyRate -&gt; Mức lương theo giờ của nhân viên<br/>13 JobInvolvement -&gt; Mức độ tham gia yêu cầu cho công việc của nhân viên<br/>14 JobLevel -&gt; Cấp bậc công việc của nhân viên<br/>15 JobRole -&gt; Vị trí công việc của nhân viên trong tổ chức<br/>16 JobSatisfaction -&gt; Sự hài lòng của nhân viên với công việc của họ<br/>17 MaritalStatus -&gt; Tình trạng hôn nhân của nhân viên<br/>18 MonthlyIncome -&gt; Thu nhập hàng tháng của nhân viên<br/>19 MonthlyRate -&gt; Mức lương hàng tháng của nhân viên<br/>20 NumCompaniesWorked -&gt; Số lượng công ty mà nhân viên đã làm việc<br/>21 Over18 Whether -&gt; Nhân viên có đủ 18 tuổi trở lên không<br/>22 OverTime -&gt; Nhân viên có làm thêm giờ không<br/>23 PercentSalaryHike -&gt; Tỷ lệ tăng lương cho nhân viên<br/>24 PerformanceRating -&gt; Điểm đánh giá hiệu suất của nhân viên<br/>25 RelationshipSatisfaction -&gt; Sự hài lòng của nhân viên với các mối quan hệ của họ<br/>26 StandardHours -&gt; Giờ làm việc tiêu chuẩn cho nhân viên<br/>27 StockOptionLevel -&gt; Cấp độ tùy chọn cổ phiếu của nhân viên<br/>28 TotalWorkingYears -&gt; Tổng số năm mà nhân viên đã làm việc<br/>29 TrainingTimesLastYear -&gt; Số lần nhân viên được tham gia đào tạo trong năm qua<br/>30 WorkLifeBalance -&gt; Cảm nhận của nhân viên về cân bằng giữa công việc và cuộc sống<br/>31 YearsAtCompany -&gt; Số năm mà nhân viên đã làm việc trong công ty<br/>32 YearsInCurrentRole -&gt; Số năm mà nhân viên đã làm trong vai trò hiện tại<br/>33 YearsSinceLastPromotion -&gt; Số năm kể từ lần thăng chức cuối cùng của nhân viên<br/>34 YearsWithCurrManager -&gt; Số năm mà nhân viên đã làm việc với người quản lý hiện tại<br/>35 Attrition -&gt; Nhân viên có rời khỏi tổ chức không (Cột mục tiêu)<br/></p><p id="55275bd6-0a9c-47d5-b2a1-8ed4b9ded964" class="">
+</p><p id="f3019ed1-891e-436b-91b3-278062365dca" class=""><strong>NOTE:</strong> Nếu dài quá các cậu có thể bỏ đi những hàng mà ý nghĩa đã hiển nhiên, chỉ để lại những dòng thực sự cần giải thích ý nghĩa</p><h1 id="d7cc95bc-7f12-4232-bcfe-8859c12bee66" class="">Thống kê về data</h1><ul id="924fbb48-8eb9-460f-9c81-c3fcb6e9435b" class="bulleted-list"><li style="list-style-type:disc">Kích thước: 1470 hàng * 35 cột (1470 mẫu, với mỗi mẫu có 34 chỉ số và 1 nhãn attrition nhận giá trị 0 hoặc 1)</li></ul><ul id="f035df3d-9575-4931-9dd7-ffa3b9214ece" class="bulleted-list"><li style="list-style-type:disc">Data không cân bằng, với nhãn Attrition, trong tổng số 1470 mẫu có đến 1233 mẫu có giá trị No, trong khi chỉ có 237 mẫu có giá trị Yes.</li></ul><ul id="6f270963-8165-4082-bda8-24262c43fce5" class="bulleted-list"><li style="list-style-type:disc">Kiểu của các chỉ số (trong 35 chỉ số)</li></ul><figure id="07523ff9-d287-4d96-9ce8-81cdaf0df171" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/Untitled.png"><img style="width:880px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/Untitled.png"/></a></figure><p id="5ed9131b-9bd5-4910-9dda-b4321882d05a" class="">Numeric là giá trị số thực(ví dụ như tiền lương, độ tuổi,…), boolean là kiểu biến chỉ nhận 1 trong 2 giá trị True/False, categorical là kiểu nhận ra trị theo nhóm( ví dụ <a href="https://ngocquan.com/ftu-project/#pp_var_-769598273810931348"><strong>BusinessTravel</strong></a><strong>,…)</strong></p><ul id="ea9607b1-9b41-4e5d-9bb4-c89a9c0e33c9" class="bulleted-list"><li style="list-style-type:disc">Missing value: Toàn bộ 35 cột đều đủ 1470 giá trị, không có missing values trong bảng</li></ul><figure id="9e7a6d56-a917-4749-a627-7823dddffced" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/Untitled%201.png"><img style="width:1457px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/Untitled%201.png"/></a></figure><ul id="b11ca3d7-5de7-455b-9b2b-2537016187f2" class="bulleted-list"><li style="list-style-type:disc">Correlation giữa các chỉ số: Có thể thấy correlation giữa Attrition với tất cả các biến còn lại đều dao động trong khoảng [-0.25; 0.25] ⇒ Attrition có lẽ không bị ảnh hưởng trực tiếp bởi bất kì một đối tượng cụ thể nào, chúng ta sẽ tìm hiểu cụ thể ở phần sau. Ngoài ra ta cũng có thể thấy correlation cao bất thường giữa một số cặp chỉ số như PercentSalaryHike với PerformanceRating, JobLevel với MonthlyIncome, hay MonthlyIncome với TotalWorkingYears.</li></ul><figure id="58cd1a31-8fbe-40b8-bce6-0368eb267085" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/Untitled%202.png"><img style="width:1232px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/Untitled%202.png"/></a></figure><p id="ee2f7983-99e8-410f-a89c-dadc3d6ba248" class="">(các cậu có thể hightlight chữ Attrition ở trục dọc cho cô dễ nhìn mình ko biết edit, các cậu hộ mình nhá =)))</p><p id="9f1b7580-e70f-4520-aead-b420d86dc9c9" class="">Tiếp theo chúng ta đi phân tích về phân bố của mỗi chỉ số trong dataset, có thể thấy có rất nhiều dataset phân bố rất không đồng đều có thể khiến cho phân tích của chúng ta dẫn đến nhận xét không chính xác, nhưng cũng có những dataset phân bố đồng đều gần như uniform distribution.</p><p id="9281e833-082d-4f1c-ba7e-d0abc95af2cb" class="">
+</p><h2 id="9d7cef3a-95c6-4e59-b7ed-c2de6cc7c3df" class="">NHẬN XÉT VỀ PHÂN BỐ DỮ LIỆU</h2><p id="bed742d3-52d9-4354-8708-f83b715df54c" class="">Ta có thể thấy dataset là không cân bằng với nhiều biến ví dụ như YearAtCompany, TotalWorkingYears,… điều này khiến cho ta phải chú ý khi thực hiện phân tích dữ liệu dựa trên những biến này. Ngoài ra cũng có những biến mà dataset phân bố gần như đồng đều ví dụ như HourlyRate, DailyRate, …</p><h2 id="4c8a0bd6-7350-4212-aeb2-6991f3bee0cc" class="">9 Attributes phân bố không đồng đều nhất</h2><figure id="2151f684-d07c-42c7-a2dd-ea0c648fc195" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/most_imbalance.png"><img style="width:480px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/most_imbalance.png"/></a></figure><h2 id="080c4357-5eac-43a7-821d-a79261828df2" class="">9 attributes phân bố đều nhất </h2><figure id="edb2c965-4c23-4337-9c8f-38f08b1028bd" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/most_balance.png"><img style="width:480px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/most_balance.png"/></a></figure><h1 id="1413239d-0a18-425f-9934-a603729dad63" class="">CLEANING</h1><ul id="94805aea-23ca-49e1-a383-a8a25321613e" class="bulleted-list"><li style="list-style-type:disc">Có 3 cột StandardHours, EmployeeCount, Over18 tất cả 1470 hàng đều nhận duy nhất 1 giá trị nên không có ý nghĩa đối với bộ dataset ⇒ Ta có thể bỏ đi 3 cột này</li></ul><ul id="aedd4e40-5621-440b-8748-f90a5b3cbb0b" class="bulleted-list"><li style="list-style-type:disc">Do bộ datasets của chúng ta không bị thiếu bất kì giá trị nào nên sẽ không cần phải thực hiện thêm.</li></ul><h1 id="a7376fd6-3f57-4ae1-964e-81b9d1294182" class="">GIẢ THUYẾT</h1><h2 id="35d866d6-0416-40ee-856b-e67d663aae7e" class="">1. Liệu Attrition có bình đẳng giữa nam và nữ?</h2><figure id="3eb7c89f-7479-42e0-abae-18c54e24cbf5" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_gender.png"><img style="width:1000px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_gender.png"/></a></figure><p id="b2fd0efb-904c-4a11-af30-e74aabdf4c7f" class="">Giải thích: Vòng ngoài là tỉ lệ giữa Male/Female, vòng trong đại diện cho Attrition là 0 hay 1, với màu đỏ là Attrition, màu xanh là không.</p><p id="b4d990ed-7568-47cb-8c25-d43671454b66" class="">Có thể thấy số lượng Male chiếm khoảng 60% số lượng nhân viên, trong đó 10.2% trong số 60% này là attrition, con số này đối với Female là 5.9% trong tổng số 40%</p><p id="8b85529b-fc02-45bc-958a-81c04fae8e7e" class="">Như vậy, nếu số lượng Male/Female cân bằng hơn thì tỉ lệ attrition theo giới tính cũng không có nhiều chênh lệch, do đó ta có thể kết luận Attrition không bị ảnh hưởng bởi giới tính</p><h2 id="8ba677d8-35f9-4d03-b4dc-d58c36caef38" class="">Tuổi tác có ảnh hưởng đến Attrition không?</h2><figure id="672300f3-68a9-4f76-9edc-f714d0f64c12" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_age.png"><img style="width:1500px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_age.png"/></a></figure><p id="fae90f8a-0b0e-4d21-91a9-682d0d387234" class="">Đường màu xanh là phân bố theo tuổi của nhóm Attrition, trong khi đường màu vàng là phân bố của nhóm Attrition = No. Ta có thể thấy nhóm người trẻ sẽ có khả năng thuộc nhóm Attrition cao hơn và ít hơn đối với nhóm trên 30 tuổi.</p><h1 id="6893d614-7f7c-4557-9ea2-30abccb39e96" class="">SALARY &amp; AWARD</h1><h2 id="6bf98016-0110-4aec-bdc6-858d835e14f1" class="">Lương có phải là vấn đề chính dẫn đến Attrition? </h2><figure id="59a8357c-2fa5-4138-9501-c596e58f624c" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_monthly_income.png"><img style="width:1500px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_monthly_income.png"/></a></figure><p id="e5905a54-2b42-448a-beda-f231f05ea78b" class="">Ta có thể thấy rõ được sự khác biệt giữa hai nhóm nhân viên theo thu nhập hàng tháng, trong khi nhóm Attrition có thu nhập phân bố chủ yếu ở mức thấp(dưới 5000) thì đối với nhóm không Attrition, thu nhập tuy vẫn tập trung chính ở khoảng 5000 nhưng có sự phân bố đều hơn và nhiều hơn hẳn nhóm Attrition trong khoảng thu nhập cao.</p><figure id="f28dac21-621c-4148-ac98-cdaf9ada8173" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_salary_hike.png"><img style="width:1200px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_salary_hike.png"/></a></figure><p id="435589bd-6fa1-4492-aa01-b5b3c39d48f8" class="">Biểu đồ trên miêu tả phân phối theo biến PercentSalaryHike của hai nhóm nhân viên, nhóm Attrition và nhóm nhân viên còn lại. Ta có thể thấy không quá quá nhiều sự khác biệt giữa hai phân phối này, cả hai đều tuân theo cùng một phân phối theo như tập dataset gốc. Như vậy, trái với dự đoán của chúng ta, các nhân viên không thực sự xem xét đến mức độ thăng tiến về lương khi cân nhắn đến việc Attrition, mà thay vào đó họ chỉ thực sự xem xét đến thu nhập hiện tại của mình (MonthlyIncome)</p><h2 id="cb73df25-6f98-43cf-8fe4-1c5483879dfe" class="">StockOptionLevel có ảnh hưởng đến quyết định về Attrition của nhân viên?</h2><figure id="5248d3fd-bb07-4986-8f23-bb994933b8b6" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_stockoptionlevel.png"><img style="width:1868px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_stockoptionlevel.png"/></a></figure><figure id="e16e28ee-edfc-404a-be2d-2c3e10bd7dbb" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_stockoptionlevel_attrition.png"><img style="width:1845px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_stockoptionlevel_attrition.png"/></a></figure><p id="bbfb1004-b769-4875-b8b2-20c147386a53" class="">Ta có thể thấy rằng trong nhóm Attrition, tỉ lệ số nhân viên có mức StockOptionLevel bằng 0 cao đột biến khi so sánh với tỉ lệ chung của toàn bộ nhân viên. Tuy nhiên, đối với nhóm có StockOptionLevel là 2 hoặc 3 thì tỉ lệ giữa nhóm Attrition và toàn bộ nhân viên thì không có sự khác biệt đáng kể.</p><h1 id="75b42b43-a9af-42b6-b984-e9d2a8eb2bed" class="">WORK</h1><h2 id="253ce1c4-d963-4124-896b-e686680c2c38" class="">Vị trí nào(JobRole) sẽ có tỉ lệ Attrition cao nhất?</h2><figure id="34fdb14b-56a1-4e85-9c6c-e4f9ed2df9c9" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_rate_by_jobrole.png"><img style="width:1200px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_rate_by_jobrole.png"/></a></figure><p id="1b7ebca9-4eb7-433a-9482-c6b98c857d61" class="">Nhận xét: Có thể thấy những vị trí cấp cao như Manager, Research Director, Manufacturing Director có tỉ lệ Attrition rất thấp so với phần còn lại, trong khi những vị trí như Sales Representative cho thấy tỉ lệ Attrition cao bất thường lên đến khoảng gần 40%</p><h2 id="4db1ee9f-1828-4fad-974f-9488293700e5" class="">Những người trong nhóm Attrition có xu hướng làm việc ít hơn không?(TotalWorkingYears)</h2><p id="6b186753-25e4-480b-9c90-49fd6f9f3278" class="block-color-red"><strong>NOTE</strong></p><p id="885b385b-0629-425f-8baa-704fd90592bc" class=""><mark class="highlight-red">Đây là 1 ví dụ về việc thống kê data sai lầm, nếu như chỉ thống kê mật độ xác suất như này sẽ khiến người đọc hiểu nhầm rằng nhóm Attrition có xu hướng làm việc ít hơn, hầu hết số lượng Attrition có không quá tổng số 15 năm làm việc (chủ yếu trong khoảng từ 6-12 năm)</mark></p><figure id="73d97349-2e9c-45cf-b11b-f3f8d73bb1c6" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/working_year_histogram.png"><img style="width:1500px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/working_year_histogram.png"/></a></figure><p id="721caf7c-ed57-40c9-b82e-a293037a94f7" class=""><mark class="highlight-red">Tuy nhiên thật ra không phải vậy, bởi dataset của chúng ta ngay từ đầu đã không cân bằng(số lượng nhân viên làm việc từ 5-15 năm nhiều nhất), nên tất nhiên sẽ khiến số lượng Attrition ở nhóm này nhiều nhất. </mark></p><p id="0c5af7dd-0d48-4a7a-98fe-e373c7b981a9" class="">Ta cần một biểu đồ như sau để có thể trả lời chính xác được câu hỏi liệu nhóm Attrition có xu hướng làm việc ít hơn không?</p><figure id="6a84c2d7-9af9-4317-968b-1c61c7b15a1e" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_total_working_years.png"><img style="width:1200px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_total_working_years.png"/></a></figure><p id="f337a3f2-ce42-4e5e-a233-ccd83aa9951b" class="">Từ đây ta có thể thấy được rằng nhóm Attrition có hàm mật độ lớn hơn nhóm Attrition = No đối với nhóm nhân viên có dưới 10 năm làm việc, cho thấy tỉ lệ nhân viên dưới 10 năm làm việc ở nhóm Attrition là cao hơn hẳn so với nhóm Attrition = No, và ngược lại đối với nhóm có số năm làm việc lớn. Một nhận xét đáng chú ý khác đó chính là tỉ lệ rất ít nhân viên làm việc có thời gian dưới 5 năm đối với nhóm Attrition = No.</p><p id="88e446a0-54a4-4f69-bfa7-af3122ad9f4a" class="">Qua đây ta có thể thấy đây cũng là một yếu tố ảnh hưởng đến Attrition, khi mà thời gian làm việc càng dài thì sẽ càng ít có khả năng Attrition hơn.</p><h2 id="8a3e1657-65fc-4744-8e96-e766d5c0dca5" class="">Làm quá lâu một công việc có nhàm chán dẫn đến Attrition?</h2><figure id="eac72db5-5efc-4ad0-9023-28a1b36dac48" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_age_rate_by_attrition.png"><img style="width:768px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_age_rate_by_attrition.png"/></a></figure><p id="10c23252-7b4c-48d9-8bec-231ff8fb106b" class="">Mỗi cột của biểu đồ là tỉ lệ số nhân viên Attrition trên tổng số nhân viên mà có YearsInCurrentRole là số đại diện của cột. Cột 11, 16, 17, 18 không có giá trị bởi trong tổng số 1470 nhân viên trong bộ dữ liệu, không có bất kì nhân viên nào thuộc nhóm Attrition mà có YearsInCurrentRole là 11, 16, 17 hay 18. Chú ý rằng tỉ lệ cao bất thường với chỉ số YearsInCurrentRole = 15 không mang nhiều ý nghĩa, chỉ là do số lượng nhân viên có YearsInCurrentRole = 15 quá ít (có 2 trong tổng số 8 nhân viên có YearsInCurrentRole = 15 thuộc nhóm Attrition, dẫn đến tỉ lệ 0.25 với nhóm này)</p><p id="bb2364e8-9ed8-4ce2-a539-2bdf6151295e" class="">Như vậy, trái với giả thuyết rằng Làm quá lâu một công việc sẽ nhàm chán và dẫn đến Attrition, ta có thể thấy tỉ lệ nhân viên Attrition giảm dần theo thời gian làm việc ở vị trí đó, cho thấy rằng nhân viên có xu hướng muốn gắn bó hơn với công việc họ đã làm trong thời gian dài.</p><h2 id="40a875ac-2046-4bd0-b8f8-2a59688676ef" class="">Việc làm việc Overtime có dẫn đến Attrition không?</h2><p id="1d94b480-eefe-42ae-abed-2db8b6a29a45" class="">Thống kê đối với 1470 nhân viên trong dataset:</p><figure id="698faa01-b7b5-47b0-b355-8bb9133fa24f" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/Untitled%203.png"><img style="width:288px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/Untitled%203.png"/></a></figure><figure id="52cfc376-5d2a-4c4c-88a8-d0842793808e" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_overtime.png"><img style="width:1200px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_overtime.png"/></a></figure><p id="537a4306-52f9-4464-8e94-2e1f28829fb5" class="">Như vậy ta có thể thấy việc làm Overtime là một trong những yếu tố tác động lớn nhất đến Attrition, bởi tỉ lệ nhân viên trong nhóm Attrition cao gấp 3 lần đối với những nhân viên đã làm việc Overtime, lên tới 30%, trong khi con số đó ở nhóm không làm việc Overtime chỉ là 10.4%</p><h2 id="33cad59b-4597-4427-a353-8a3d09451e03" class="">Work Life Balance có phải là nhân tố tác động đến Attrition?</h2><figure id="bddc996a-0c11-43ab-bbd7-bf52f72f9711" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_work_life_balance.png"><img style="width:1000px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_work_life_balance.png"/></a></figure><p id="3829e0ff-8dbf-45e3-8823-2c375dc862e2" class="">Từ 4 biểu đồ tròn ứng với 4 nhóm WorklifeBalance khác nhau, ta có thể thấy được rằng nhóm nhân viên có tỉ lệ WorklifeBalance thấp nhất có tỉ lệ Attrition cao gấp đôi khi so sánh với các nhóm còn lại, trong khi tỉ lệ Attrition ở các nhóm còn lại là tương đương nhau. Điều này có thể thấy WorklifeBalance có ảnh hưởng đến quyết định Attrition của nhân viên, khi mà việc cân bằng được giữa công việc và cuộc sống giúp nhân viên thoải mái hơn trong việc tiếp tục làm việc. </p><h2 id="390a041d-a02d-4082-b151-19a26d5dba2e" class="">E<strong>nvironment satisfaction có ảnh hưởng nhiều đến Attrition không ?</strong></h2><figure id="2785f6f1-37d6-428e-b18c-21349bb6390a" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_env_satis.png"><img style="width:1000px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_env_satis.png"/></a></figure><p id="76232235-2b1f-4780-8858-e4f9314ca8bc" class="">Có thể thấy sự hài lòng với môi trường làm việc có tác động đến Attrition. Đối với nhóm không Attrition, ta có thể thấy rõ răng số lượng nhân viên có mức độ hài lòng cao(3-4) cao hơn rất nhiều so với nhóm thấp(1-2). Còn đối với nhóm Attrition thì sự khác biệt là ít hơn, tuy nhiên ta cũng thấy được số nhân viên Attrition đánh giá ở mức điểm thấp nhất 1.0 là nhiều nhất.</p><h2 id="25991478-0d77-4791-9d48-0623ae957e71" class="">Tương tự, liệu Job Satisfaction có ảnh hưởng lớn đến Attrition không?</h2><figure id="a008a9cd-a50e-4cc8-afb5-50cbbe302674" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/job_satis.png"><img style="width:1200px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/job_satis.png"/></a></figure><p id="3ce44668-f84d-4875-a34a-02238752ee29" class="">Ta có thể thấy sự khác biệt về JobSatisfaction là không quá rõ rệt đối với nhóm Attrition, tuy nhiên đối với nhóm không Attrition, ta có thể thấy nhân viên có xu hướng hài lòng với công việc chiếm đa số.</p><h1 id="7e270774-8685-4e92-8c2b-fa56450c1a24" class="">EDUCATION</h1><p id="b6cabf64-1fdf-4950-bb0d-26b9560eafdc" class="">Tỉ lệ về lĩnh vực học vấn trong dataset là không cân bằng, khi phần lớn trong số nhân viên học về lĩnh vực Life Science và Medical.</p><figure id="3452ce27-4f38-4575-b7db-568f33e47f33" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_pie_chart.png"><img style="width:926px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_pie_chart.png"/></a></figure><h2 id="827ebf0e-913a-4f18-ad86-cf849a147174" class="">Lĩnh vực học vấn của nhân viên có tác động đến Attrition?<br/><br/></h2><figure id="3c5f20ec-d0b5-4060-be71-2cb5ec2d8ace" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/Screenshot_2023-10-11_192340.png"><img style="width:1451px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/Screenshot_2023-10-11_192340.png"/></a></figure><p id="a43f8bd0-1493-48d5-9ac6-a70700bb94c8" class="">Có thể thấy tỉ lệ Attrition là tương đối giống nhau ở các lĩnh vực học vấn, cho thấy đây không phải là một yếu tố có tác động lớn đến Attrition.</p><h2 id="8af8eb43-0a3d-4cf9-9360-b603060c23ee" class="">Trình độ học vấn có ảnh hưởng đến Attrition hay không?</h2><figure id="ffd2b548-41c5-4e60-bf72-c0be7986290c" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_education_level.png"><img style="width:640px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_education_level.png"/></a></figure><p id="5f38951a-9b17-4dcb-8606-4e90d16c51a3" class="">Phần lớn số lượng nhân viên có trình độ học vấn ở mức 3, tuy nhiên đây cũng là mức học vấn có số lượng Attrition nhiều nhất. Nhìn chung tỉ lệ Attrition ở các nhóm trình độ học vấn là không có nhiều khác biệt, ngoại trự những nhân viên có mức học vấn cao nhất (mức 5) gần như không thuộc nhóm Attrition.</p><h1 id="39f79945-9b3e-41c0-86b3-27285cb605d9" class="">MODEL</h1><h2 id="6d398659-c7a7-4bf7-bae8-f3410838fff0" class="">TIỀN XỬ LÍ DATA</h2><p id="0571ecae-bb41-4d94-9f8c-86e9f2f0ea23" class="">Đầu tiên ta kiểm tra xem trong dataset có cột nào mà tất cả nhân viên đều nhận duy nhất một giá trị(cột này không có ý nghĩa gì trong việc dự đoán) để bỏ đi. </p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="492a4f15-5e22-4fa9-8464-580606c60bba" class="code"><code class="language-Python">columns_with_one_unique_value = data.columns[data.nunique() == 1]
+# Bỏ đi các cột chỉ có duy nhất một giá trị (Vì tất cả 1470 nhân viên đều có giá trị như nhau nên không có ý nghĩa trong phân biệt giữa nhóm Attrion và không)
+X_drop = X.drop(columns=columns_with_one_unique_value, inplace= False)</code></pre><p id="f485e637-f1ea-4578-8bbb-d213cc04423b" class="">
+</p><p id="f1fcfb0c-03b5-4504-a170-e81788f28803" class="">Tiếp theo ta xử lí các biến categorical, đầu tiên là các biến categorical nhận giá trị chỉ mức độ, ví dụ như với biến BusinessTravel ta có thể chuyển bằng OrdinalEncoder(), tức là Non-Travel chuyển thành 0, Travel_Rarely chuyển thành 1 và Travel_Frequently chuyển thành 2. Tuy nhiên đối với một số biến khác các giá trị nhận của các nhân viên mang tính liệt kê, không có quan hệ trực tiếp với nhau ví dụ như với Department thì các giá trị là tên các phòng ban, không có quan hệ trực tiếp với nhau, khi đó ta sẽ sử dùng OneHotEncoder(). Cuối cùng đối với các biến Categorical nhận 2 giá trị Yes/No như Overtime hoặc Male/Female như Gender, ta chỉ đơn giản chuyển thành 0 - 1.</p><p id="80c0db10-b442-4269-b724-4d1fe6dc1816" class="">
+</p><p id="a52469e1-2179-42c0-9741-d0d889c20ea1" class="">Cuối cùng, khi tất cả đều nhận giá trị là số, ta cần chuyển các giá trị về cùng một khoảng giá trị để đảm bảo không có cột nào chiếm ưu thế hơn trong quá trình huấn luyện mô hình. Ở đây ta sử dụng MinMaxScaler() để đưa giá trị về cùng khoảng [0, 1]</p><p id="c8c7cd0b-7f36-47f7-9649-123716d3966a" class="">
+</p><h3 id="14ea8017-f61d-435f-8746-d2ae8dbb70a7" class="">IMBALANCE DATA</h3><p id="28f666e2-7fde-46da-9216-3f7cfe955d21" class="">Do dataset không cân bằng giữa nhóm Attrion và không Attrition, với nhóm không Attrition chiếm áp đảo do đó ta sử dụng kĩ thuật oversampling với SMOTE() để dataset được cân bằng giữa hai nhóm. </p><h2 id="1018d5aa-8088-4815-8b5c-c2b6d20dfa78" class="">CONFUSION MATRIX</h2><figure id="0af44fb5-642f-4721-b3c8-3284f4ee9301" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/confusion_matrix_-_LogisticRegression().png"><img style="width:1200px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/confusion_matrix_-_LogisticRegression().png"/></a></figure><figure id="e7a9a414-c107-4f41-a626-b4b039fe5386" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/confusion_matrix_-_GradientBoostingClassifier().png"><img style="width:1200px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/confusion_matrix_-_GradientBoostingClassifier().png"/></a></figure><figure id="71627e47-56b5-4749-b15f-0215f7db7640" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/confusion_matrix_-_AdaBoostClassifier().png"><img style="width:1200px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/confusion_matrix_-_AdaBoostClassifier().png"/></a></figure><figure id="984552d8-0287-402a-85d2-83fcecc17266" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/confusion_matrix_-_DecisionTreeClassifier().png"><img style="width:1200px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/confusion_matrix_-_DecisionTreeClassifier().png"/></a></figure><figure id="09df97fa-dd82-4688-97a3-9fe36c8a138b" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/Confusion_Matrix_-_RandomForest_Tuning.png"><img style="width:1200px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/Confusion_Matrix_-_RandomForest_Tuning.png"/></a></figure><table id="c2837854-25d5-4f9d-b7a6-49dc78f1cfda" class="simple-table"><tbody><tr id="3318d838-1669-4140-84d4-e79051c3df5a"><td id="}wwW" class=""></td><td id="husY" class="">LogisticRegression</td><td id="\}tB" class="">RandomForest</td><td id="I:OC" class="">AdaBoost</td><td id="tHTz" class="">Decision Tree</td></tr><tr id="331372fc-d0d7-4da5-984c-0c21b3c2dc14"><td id="}wwW" class="">Accurancy</td><td id="husY" class="">78.91%</td><td id="\}tB" class="">84.35%</td><td id="I:OC" class="">85.71%</td><td id="tHTz" class="">77.55%</td></tr><tr id="77ce9902-6b6f-48ad-8294-788ece029630"><td id="}wwW" class="">Precision</td><td id="husY" class="">37.25%</td><td id="\}tB" class="">47.73%</td><td id="I:OC" class="">53.85%</td><td id="tHTz" class="">27.14%</td></tr><tr id="79d0f39c-a10a-480e-928b-8750e2399108"><td id="}wwW" class="">Recall</td><td id="husY" class="">56.72%</td><td id="\}tB" class="">31.34%</td><td id="I:OC" class="">41.79%</td><td id="tHTz" class="">28.36%</td></tr><tr id="94af138a-2a15-4344-9ea3-c8acdd866804"><td id="}wwW" class="">F1 Score</td><td id="husY" class="">44.97%</td><td id="\}tB" class="">37.84%</td><td id="I:OC" class="">47.06%</td><td id="tHTz" class="">27.24%</td></tr></tbody></table><h2 id="8a4c42d9-a880-41fd-91d3-86fa6b88fa7a" class="">FEATURE IMPORTANCE</h2><p id="92fc7694-f9d7-4ad7-8d5f-eb44b5cd8aa9" class="">Sử dụng Feature Importance để tìm ra 10 yếu tố quan trọng nhất ảnh hưởng đến Attrition đối với nhân viên:</p><figure id="8e178db5-4d0f-48f0-9499-65631331f6b3" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_feature_importance.png"><img style="width:1080px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/new_feature_importance.png"/></a></figure><p id="e9b6fdd7-17e2-4339-97f7-ea366fff13d8" class="">Nhận xét: Như vậy chủ yếu những chỉ số có liên quan đến công việc, lương thưởng mà ta đã phân tích ở trên đã thực sự được model RandomForest chỉ ra là những yếu tố quan trọng nhất ảnh hưởng đến Attrition. Ngoài ra, cũng còn một số chỉ số cũng có ảnh hưởng đến Attrition mà không thực sự liên quan đến công việc hay lương thưởng, ví dụ như DistanceFromHome. Đây là những biến tiền ẩn mà ta khó có thể nhận ra ngay được từ đầu, cho thấy sự cần thiết của việc sử dụng mô hình RandomForest để chọn ra Feature Importance.</p><h2 id="b14277f9-9d59-4ad4-9548-7713e3940cec" class="">ROC CURVE</h2><figure id="c29f6e00-6131-4767-9eca-6cdf453c3187" class="image"><a href="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/roc_curve_(1).png"><img style="width:1000px" src="ATTRITION%20Project%20(FTU)%20d6f9d2b6ad784cb282fe1df54beee7a3/roc_curve_(1).png"/></a></figure><p id="19b25ec2-9d30-4111-8996-6267edfdfa73" class="">Từ đường ROC curve ta nhận thấy model AdaBoost và model Logistic Regression có khả năng dự đoán tương đối tốt hơn so với các model còn lại. </p><h1 id="a1de31ef-8074-4dca-88b5-d8f2e130bb2b" class="">CONCLUSION</h1><p id="4677024c-745c-486a-9794-ca27b4963c97" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"><hr/><details open="" style="padding-top:1em"><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Page comments</summary><div class="indented"><div><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a-/AOh14GgYJu4kfQ4pCWisGQRg8ZU4eQdYCj7XNMzcnE4k=s100" class="icon user-icon"/><span><b>Quân Phạm Ngọc</b> <time style="font-size:0.8em">Dec 13, 2023, 8:49 PM</time></span></span></div><div style="padding:0.2em">From Ngoc Quan | <a href="https://ngocquan.com/">https://ngocquan.com/</a> | <a href="https://www.facebook.com/ngocquanofficial">https://www.facebook.com/ngocquanofficial</a></div><div style="padding:0.3em"></div></li></ul></div><hr/></div></details></span></body></html>
